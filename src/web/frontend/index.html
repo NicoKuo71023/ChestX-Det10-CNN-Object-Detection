@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/vue@3.3.4/dist/vue.global.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+          <div 
+            class="drop-zone" 
+            @dragover.prevent
+            @dragenter.prevent
+            @drop="handleDrop"
+          ></div>
+          
+        </div>
+        <div class="show-zone" v-for="(file, index) in previewImages" :key="index">
+            <img :src="file" alt="預覽圖片" class="img-show"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

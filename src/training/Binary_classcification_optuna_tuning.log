@@ -1,0 +1,618 @@
+A new study created in memory with name: no-name-b5b2c849-df2a-4060-af8c-28ede827b18f
+Trial 0 failed with parameters: {'learning_rate': 2.8158402734449516e-05, 'batch_size': 32, 'dropout_rate': 0.23195902165136245, 'weight_decay': 0.0008930203933325087} because of the following error: KeyboardInterrupt().
+Traceback (most recent call last):
+  File "c:\Users\Nico\anaconda3\envs\dev310-mldl\lib\site-packages\optuna\study\_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "C:\Users\Nico\AppData\Local\Temp\ipykernel_17636\2315036112.py", line 40, in objective
+    metrics = model.fit(dl_train, dl_val, num_epochs=30)  # 減少 Epochs 加快調參速度
+  File "C:\Users\Nico\AppData\Local\Temp\ipykernel_17636\3770481338.py", line 93, in fit
+    train_loss, train_acc, train_precision, train_recall, train_f1 = self.train_step(dl_train)
+  File "C:\Users\Nico\AppData\Local\Temp\ipykernel_17636\3770481338.py", line 26, in train_step
+    train_loss += loss_value.item()
+KeyboardInterrupt
+Trial 0 failed with value None.
+A new study created in memory with name: no-name-f540332b-e5b6-4566-a57b-5b6f0ac9a7a6
+A new study created in memory with name: no-name-f540332b-e5b6-4566-a57b-5b6f0ac9a7a6
+2024-12-17 01:38:27 - ========================================================================================================================================================================================================
+2024-12-17 01:38:27 - Trial 0:
+2024-12-17 01:38:27 - Train Accuracy: 0.781250, Train Precision: 0.976361, Train Recall: 0.734771, Train F1 Score: 0.838511
+2024-12-17 01:38:27 - Validation Accuracy: 0.658902, Validation Precision: 0.838542, Validation Recall: 0.692473, Validation F1 Score: 0.758539
+Trial 0 finished with value: 0.6924731135368347 and parameters: {'learning_rate': 2.8169037130024615e-05, 'batch_size': 64, 'dropout_rate': 0.22907755423729326, 'weight_decay': 9.910384496388834e-05}. Best is trial 0 with value: 0.6924731135368347.
+Trial 0 finished with value: 0.6924731135368347 and parameters: {'learning_rate': 2.8169037130024615e-05, 'batch_size': 64, 'dropout_rate': 0.22907755423729326, 'weight_decay': 9.910384496388834e-05}. Best is trial 0 with value: 0.6924731135368347.
+2024-12-17 01:39:40 - ========================================================================================================================================================================================================
+2024-12-17 01:39:40 - Trial 1:
+2024-12-17 01:39:40 - Train Accuracy: 0.903333, Train Precision: 0.978197, Train Recall: 0.894879, Train F1 Score: 0.934685
+2024-12-17 01:39:40 - Validation Accuracy: 0.657238, Validation Precision: 0.796339, Validation Recall: 0.748387, Validation F1 Score: 0.771619
+Trial 1 finished with value: 0.7483870983123779 and parameters: {'learning_rate': 0.0002895734559764826, 'batch_size': 64, 'dropout_rate': 0.28215166618305165, 'weight_decay': 2.4536582836040413e-05}. Best is trial 1 with value: 0.7483870983123779.
+Trial 1 finished with value: 0.7483870983123779 and parameters: {'learning_rate': 0.0002895734559764826, 'batch_size': 64, 'dropout_rate': 0.28215166618305165, 'weight_decay': 2.4536582836040413e-05}. Best is trial 1 with value: 0.7483870983123779.
+2024-12-17 01:40:53 - ========================================================================================================================================================================================================
+2024-12-17 01:40:53 - Trial 2:
+2024-12-17 01:40:53 - Train Accuracy: 0.886250, Train Precision: 0.985276, Train Recall: 0.865768, Train F1 Score: 0.921664
+2024-12-17 01:40:53 - Validation Accuracy: 0.720466, Validation Precision: 0.827815, Validation Recall: 0.806452, Validation F1 Score: 0.816993
+Trial 2 finished with value: 0.8064516186714172 and parameters: {'learning_rate': 8.426990504321141e-05, 'batch_size': 64, 'dropout_rate': 0.22518925378189883, 'weight_decay': 0.00021667584138760726}. Best is trial 2 with value: 0.8064516186714172.
+Trial 2 finished with value: 0.8064516186714172 and parameters: {'learning_rate': 8.426990504321141e-05, 'batch_size': 64, 'dropout_rate': 0.22518925378189883, 'weight_decay': 0.00021667584138760726}. Best is trial 2 with value: 0.8064516186714172.
+2024-12-17 01:42:04 - ========================================================================================================================================================================================================
+2024-12-17 01:42:04 - Trial 3:
+2024-12-17 01:42:04 - Train Accuracy: 0.936667, Train Precision: 0.984082, Train Recall: 0.933154, Train F1 Score: 0.957941
+2024-12-17 01:42:04 - Validation Accuracy: 0.733777, Validation Precision: 0.819706, Validation Recall: 0.840860, Validation F1 Score: 0.830149
+Trial 3 finished with value: 0.8408601880073547 and parameters: {'learning_rate': 0.0007173321824824167, 'batch_size': 128, 'dropout_rate': 0.29394572077129766, 'weight_decay': 4.840120907447846e-05}. Best is trial 3 with value: 0.8408601880073547.
+Trial 3 finished with value: 0.8408601880073547 and parameters: {'learning_rate': 0.0007173321824824167, 'batch_size': 128, 'dropout_rate': 0.29394572077129766, 'weight_decay': 4.840120907447846e-05}. Best is trial 3 with value: 0.8408601880073547.
+2024-12-17 01:43:16 - ========================================================================================================================================================================================================
+2024-12-17 01:43:16 - Trial 4:
+2024-12-17 01:43:16 - Train Accuracy: 0.857083, Train Precision: 0.967243, Train Recall: 0.843666, Train F1 Score: 0.901238
+2024-12-17 01:43:16 - Validation Accuracy: 0.700499, Validation Precision: 0.841727, Validation Recall: 0.754839, Validation F1 Score: 0.795918
+Trial 4 finished with value: 0.7548387050628662 and parameters: {'learning_rate': 0.0006675642784005046, 'batch_size': 64, 'dropout_rate': 0.3071660963061303, 'weight_decay': 5.658545599311537e-05}. Best is trial 3 with value: 0.8408601880073547.
+Trial 4 finished with value: 0.7548387050628662 and parameters: {'learning_rate': 0.0006675642784005046, 'batch_size': 64, 'dropout_rate': 0.3071660963061303, 'weight_decay': 5.658545599311537e-05}. Best is trial 3 with value: 0.8408601880073547.
+2024-12-17 01:44:28 - ========================================================================================================================================================================================================
+2024-12-17 01:44:28 - Trial 5:
+2024-12-17 01:44:28 - Train Accuracy: 0.777083, Train Precision: 0.987445, Train Recall: 0.720755, Train F1 Score: 0.833281
+2024-12-17 01:44:28 - Validation Accuracy: 0.424293, Validation Precision: 0.865031, Validation Recall: 0.303226, Validation F1 Score: 0.449045
+Trial 5 finished with value: 0.3032258152961731 and parameters: {'learning_rate': 1.4142773361039934e-05, 'batch_size': 64, 'dropout_rate': 0.19975089945497534, 'weight_decay': 5.1905565123351596e-05}. Best is trial 3 with value: 0.8408601880073547.
+Trial 5 finished with value: 0.3032258152961731 and parameters: {'learning_rate': 1.4142773361039934e-05, 'batch_size': 64, 'dropout_rate': 0.19975089945497534, 'weight_decay': 5.1905565123351596e-05}. Best is trial 3 with value: 0.8408601880073547.
+2024-12-17 01:45:40 - ========================================================================================================================================================================================================
+2024-12-17 01:45:40 - Trial 6:
+2024-12-17 01:45:40 - Train Accuracy: 0.980417, Train Precision: 0.996158, Train Recall: 0.978437, Train F1 Score: 0.987218
+2024-12-17 01:45:40 - Validation Accuracy: 0.712146, Validation Precision: 0.845972, Validation Recall: 0.767742, Validation F1 Score: 0.804961
+Trial 6 finished with value: 0.7677419185638428 and parameters: {'learning_rate': 0.000155696199415727, 'batch_size': 64, 'dropout_rate': 0.15542270748067047, 'weight_decay': 1.9203611692564984e-05}. Best is trial 3 with value: 0.8408601880073547.
+Trial 6 finished with value: 0.7677419185638428 and parameters: {'learning_rate': 0.000155696199415727, 'batch_size': 64, 'dropout_rate': 0.15542270748067047, 'weight_decay': 1.9203611692564984e-05}. Best is trial 3 with value: 0.8408601880073547.
+2024-12-17 01:46:54 - ========================================================================================================================================================================================================
+2024-12-17 01:46:54 - Trial 7:
+2024-12-17 01:46:54 - Train Accuracy: 0.644167, Train Precision: 0.937883, Train Recall: 0.577898, Train F1 Score: 0.715143
+2024-12-17 01:46:54 - Validation Accuracy: 0.435940, Validation Precision: 0.853933, Validation Recall: 0.326882, Validation F1 Score: 0.472784
+Trial 7 finished with value: 0.3268817067146301 and parameters: {'learning_rate': 1.0952179833947795e-05, 'batch_size': 128, 'dropout_rate': 0.3266052589323708, 'weight_decay': 0.0003382916562854684}. Best is trial 3 with value: 0.8408601880073547.
+Trial 7 finished with value: 0.3268817067146301 and parameters: {'learning_rate': 1.0952179833947795e-05, 'batch_size': 128, 'dropout_rate': 0.3266052589323708, 'weight_decay': 0.0003382916562854684}. Best is trial 3 with value: 0.8408601880073547.
+2024-12-17 01:48:09 - ========================================================================================================================================================================================================
+2024-12-17 01:48:09 - Trial 8:
+2024-12-17 01:48:09 - Train Accuracy: 0.711667, Train Precision: 0.967068, Train Recall: 0.649057, Train F1 Score: 0.776774
+2024-12-17 01:48:09 - Validation Accuracy: 0.371048, Validation Precision: 0.884956, Validation Recall: 0.215054, Validation F1 Score: 0.346021
+Trial 8 finished with value: 0.2150537669658661 and parameters: {'learning_rate': 1.0033224826212332e-05, 'batch_size': 128, 'dropout_rate': 0.23949719189440993, 'weight_decay': 0.0003687097254660531}. Best is trial 3 with value: 0.8408601880073547.
+Trial 8 finished with value: 0.2150537669658661 and parameters: {'learning_rate': 1.0033224826212332e-05, 'batch_size': 128, 'dropout_rate': 0.23949719189440993, 'weight_decay': 0.0003687097254660531}. Best is trial 3 with value: 0.8408601880073547.
+2024-12-17 01:49:24 - ========================================================================================================================================================================================================
+2024-12-17 01:49:24 - Trial 9:
+2024-12-17 01:49:24 - Train Accuracy: 0.960833, Train Precision: 0.990529, Train Recall: 0.958491, Train F1 Score: 0.974247
+2024-12-17 01:49:24 - Validation Accuracy: 0.735441, Validation Precision: 0.814815, Validation Recall: 0.851613, Validation F1 Score: 0.832808
+Trial 9 finished with value: 0.85161292552948 and parameters: {'learning_rate': 0.0009181818949929717, 'batch_size': 128, 'dropout_rate': 0.2515567872691873, 'weight_decay': 6.155250437167031e-05}. Best is trial 9 with value: 0.85161292552948.
+Trial 9 finished with value: 0.85161292552948 and parameters: {'learning_rate': 0.0009181818949929717, 'batch_size': 128, 'dropout_rate': 0.2515567872691873, 'weight_decay': 6.155250437167031e-05}. Best is trial 9 with value: 0.85161292552948.
+2024-12-17 01:51:07 - ========================================================================================================================================================================================================
+2024-12-17 01:51:07 - Trial 10:
+2024-12-17 01:51:07 - Train Accuracy: 0.827500, Train Precision: 0.956301, Train Recall: 0.814016, Train F1 Score: 0.879441
+2024-12-17 01:51:07 - Validation Accuracy: 0.732113, Validation Precision: 0.833333, Validation Recall: 0.817204, Validation F1 Score: 0.825190
+Trial 10 finished with value: 0.8172042965888977 and parameters: {'learning_rate': 7.539922245017661e-05, 'batch_size': 32, 'dropout_rate': 0.26811565722047753, 'weight_decay': 1.0372081555059516e-05}. Best is trial 9 with value: 0.85161292552948.
+Trial 10 finished with value: 0.8172042965888977 and parameters: {'learning_rate': 7.539922245017661e-05, 'batch_size': 32, 'dropout_rate': 0.26811565722047753, 'weight_decay': 1.0372081555059516e-05}. Best is trial 9 with value: 0.85161292552948.
+2024-12-17 01:52:15 - ========================================================================================================================================================================================================
+2024-12-17 01:52:15 - Trial 11:
+2024-12-17 01:52:15 - Train Accuracy: 0.830417, Train Precision: 0.949689, Train Recall: 0.824259, Train F1 Score: 0.882540
+2024-12-17 01:52:15 - Validation Accuracy: 0.695507, Validation Precision: 0.838942, Validation Recall: 0.750538, Validation F1 Score: 0.792282
+Trial 11 finished with value: 0.750537633895874 and parameters: {'learning_rate': 0.0008608603573517377, 'batch_size': 128, 'dropout_rate': 0.3447391186947472, 'weight_decay': 0.00011864952543298134}. Best is trial 9 with value: 0.85161292552948.
+Trial 11 finished with value: 0.750537633895874 and parameters: {'learning_rate': 0.0008608603573517377, 'batch_size': 128, 'dropout_rate': 0.3447391186947472, 'weight_decay': 0.00011864952543298134}. Best is trial 9 with value: 0.85161292552948.
+2024-12-17 01:53:25 - ========================================================================================================================================================================================================
+2024-12-17 01:53:25 - Trial 12:
+2024-12-17 01:53:25 - Train Accuracy: 0.841667, Train Precision: 0.962963, Train Recall: 0.826954, Train F1 Score: 0.889791
+2024-12-17 01:53:25 - Validation Accuracy: 0.652246, Validation Precision: 0.849727, Validation Recall: 0.668817, Validation F1 Score: 0.748496
+Trial 12 finished with value: 0.6688172221183777 and parameters: {'learning_rate': 0.0004009803924277975, 'batch_size': 128, 'dropout_rate': 0.2884857920875858, 'weight_decay': 0.0008997024018364017}. Best is trial 9 with value: 0.85161292552948.
+Trial 12 finished with value: 0.6688172221183777 and parameters: {'learning_rate': 0.0004009803924277975, 'batch_size': 128, 'dropout_rate': 0.2884857920875858, 'weight_decay': 0.0008997024018364017}. Best is trial 9 with value: 0.85161292552948.
+2024-12-17 01:54:47 - ========================================================================================================================================================================================================
+2024-12-17 01:54:47 - Trial 13:
+2024-12-17 01:54:47 - Train Accuracy: 0.952500, Train Precision: 0.994321, Train Recall: 0.943935, Train F1 Score: 0.968473
+2024-12-17 01:54:47 - Validation Accuracy: 0.735441, Validation Precision: 0.821429, Validation Recall: 0.840860, Validation F1 Score: 0.831031
+Trial 13 finished with value: 0.8408601880073547 and parameters: {'learning_rate': 0.0003514733139016721, 'batch_size': 128, 'dropout_rate': 0.2601340785295433, 'weight_decay': 4.5704548094657444e-05}. Best is trial 9 with value: 0.85161292552948.
+Trial 13 finished with value: 0.8408601880073547 and parameters: {'learning_rate': 0.0003514733139016721, 'batch_size': 128, 'dropout_rate': 0.2601340785295433, 'weight_decay': 4.5704548094657444e-05}. Best is trial 9 with value: 0.85161292552948.
+2024-12-17 01:56:31 - ========================================================================================================================================================================================================
+2024-12-17 01:56:31 - Trial 14:
+2024-12-17 01:56:31 - Train Accuracy: 0.944167, Train Precision: 0.988088, Train Recall: 0.939084, Train F1 Score: 0.962963
+2024-12-17 01:56:31 - Validation Accuracy: 0.733777, Validation Precision: 0.823779, Validation Recall: 0.834409, Validation F1 Score: 0.829060
+Trial 14 finished with value: 0.8344085812568665 and parameters: {'learning_rate': 0.0009852667562888719, 'batch_size': 32, 'dropout_rate': 0.19841426464204712, 'weight_decay': 0.0001077526207084479}. Best is trial 9 with value: 0.85161292552948.
+Trial 14 finished with value: 0.8344085812568665 and parameters: {'learning_rate': 0.0009852667562888719, 'batch_size': 32, 'dropout_rate': 0.19841426464204712, 'weight_decay': 0.0001077526207084479}. Best is trial 9 with value: 0.85161292552948.
+2024-12-17 01:57:57 - ========================================================================================================================================================================================================
+2024-12-17 01:57:57 - Trial 15:
+2024-12-17 01:57:57 - Train Accuracy: 0.890833, Train Precision: 0.979530, Train Recall: 0.877089, Train F1 Score: 0.925484
+2024-12-17 01:57:57 - Validation Accuracy: 0.620632, Validation Precision: 0.843478, Validation Recall: 0.625806, Validation F1 Score: 0.718518
+Trial 15 finished with value: 0.625806450843811 and parameters: {'learning_rate': 0.00018777325634361056, 'batch_size': 128, 'dropout_rate': 0.30143547473713395, 'weight_decay': 2.94068032942087e-05}. Best is trial 9 with value: 0.85161292552948.
+Trial 15 finished with value: 0.625806450843811 and parameters: {'learning_rate': 0.00018777325634361056, 'batch_size': 128, 'dropout_rate': 0.30143547473713395, 'weight_decay': 2.94068032942087e-05}. Best is trial 9 with value: 0.85161292552948.
+2024-12-17 01:59:19 - ========================================================================================================================================================================================================
+2024-12-17 01:59:19 - Trial 16:
+2024-12-17 01:59:19 - Train Accuracy: 0.871250, Train Precision: 0.969053, Train Recall: 0.860916, Train F1 Score: 0.911790
+2024-12-17 01:59:19 - Validation Accuracy: 0.715474, Validation Precision: 0.832579, Validation Recall: 0.791398, Validation F1 Score: 0.811466
+Trial 16 finished with value: 0.7913978695869446 and parameters: {'learning_rate': 0.0005556882499901743, 'batch_size': 128, 'dropout_rate': 0.32067918169911147, 'weight_decay': 1.2640332596469652e-05}. Best is trial 9 with value: 0.85161292552948.
+Trial 16 finished with value: 0.7913978695869446 and parameters: {'learning_rate': 0.0005556882499901743, 'batch_size': 128, 'dropout_rate': 0.32067918169911147, 'weight_decay': 1.2640332596469652e-05}. Best is trial 9 with value: 0.85161292552948.
+2024-12-17 02:00:34 - ========================================================================================================================================================================================================
+2024-12-17 02:00:34 - Trial 17:
+2024-12-17 02:00:34 - Train Accuracy: 0.815833, Train Precision: 0.985567, Train Recall: 0.773046, Train F1 Score: 0.866465
+2024-12-17 02:00:34 - Validation Accuracy: 0.432612, Validation Precision: 0.856322, Validation Recall: 0.320430, Validation F1 Score: 0.466354
+Trial 17 finished with value: 0.32043009996414185 and parameters: {'learning_rate': 5.2701639486797875e-05, 'batch_size': 128, 'dropout_rate': 0.2521900385069516, 'weight_decay': 6.852571448182026e-05}. Best is trial 9 with value: 0.85161292552948.
+Trial 17 finished with value: 0.32043009996414185 and parameters: {'learning_rate': 5.2701639486797875e-05, 'batch_size': 128, 'dropout_rate': 0.2521900385069516, 'weight_decay': 6.852571448182026e-05}. Best is trial 9 with value: 0.85161292552948.
+2024-12-17 02:02:03 - ========================================================================================================================================================================================================
+2024-12-17 02:02:03 - Trial 18:
+2024-12-17 02:02:03 - Train Accuracy: 0.956250, Train Precision: 0.987194, Train Recall: 0.955795, Train F1 Score: 0.971241
+2024-12-17 02:02:03 - Validation Accuracy: 0.755408, Validation Precision: 0.803435, Validation Recall: 0.905376, Validation F1 Score: 0.851365
+Trial 18 finished with value: 0.9053763151168823 and parameters: {'learning_rate': 0.00021384578810045688, 'batch_size': 32, 'dropout_rate': 0.2035272321138425, 'weight_decay': 0.00017637951159957688}. Best is trial 18 with value: 0.9053763151168823.
+Trial 18 finished with value: 0.9053763151168823 and parameters: {'learning_rate': 0.00021384578810045688, 'batch_size': 32, 'dropout_rate': 0.2035272321138425, 'weight_decay': 0.00017637951159957688}. Best is trial 18 with value: 0.9053763151168823.
+2024-12-17 02:03:33 - ========================================================================================================================================================================================================
+2024-12-17 02:03:33 - Trial 19:
+2024-12-17 02:03:33 - Train Accuracy: 0.965000, Train Precision: 0.991671, Train Recall: 0.962803, Train F1 Score: 0.977024
+2024-12-17 02:03:33 - Validation Accuracy: 0.682196, Validation Precision: 0.829327, Validation Recall: 0.741935, Validation F1 Score: 0.783201
+Trial 19 finished with value: 0.7419354915618896 and parameters: {'learning_rate': 0.00018056908078900106, 'batch_size': 32, 'dropout_rate': 0.1669284107020489, 'weight_decay': 0.0001801527607315006}. Best is trial 18 with value: 0.9053763151168823.
+Trial 19 finished with value: 0.7419354915618896 and parameters: {'learning_rate': 0.00018056908078900106, 'batch_size': 32, 'dropout_rate': 0.1669284107020489, 'weight_decay': 0.0001801527607315006}. Best is trial 18 with value: 0.9053763151168823.
+2024-12-17 02:05:14 - ========================================================================================================================================================================================================
+2024-12-17 02:05:14 - Trial 20:
+2024-12-17 02:05:14 - Train Accuracy: 0.867083, Train Precision: 0.982412, Train Recall: 0.843127, Train F1 Score: 0.907456
+2024-12-17 02:05:14 - Validation Accuracy: 0.715474, Validation Precision: 0.832579, Validation Recall: 0.791398, Validation F1 Score: 0.811466
+Trial 20 finished with value: 0.7913978695869446 and parameters: {'learning_rate': 3.820674148521414e-05, 'batch_size': 32, 'dropout_rate': 0.2024915887429945, 'weight_decay': 0.0005518417444320524}. Best is trial 18 with value: 0.9053763151168823.
+Trial 20 finished with value: 0.7913978695869446 and parameters: {'learning_rate': 3.820674148521414e-05, 'batch_size': 32, 'dropout_rate': 0.2024915887429945, 'weight_decay': 0.0005518417444320524}. Best is trial 18 with value: 0.9053763151168823.
+2024-12-17 02:06:55 - ========================================================================================================================================================================================================
+2024-12-17 02:06:55 - Trial 21:
+2024-12-17 02:06:55 - Train Accuracy: 0.942917, Train Precision: 0.981502, Train Recall: 0.943935, Train F1 Score: 0.962352
+2024-12-17 02:06:55 - Validation Accuracy: 0.738769, Validation Precision: 0.816872, Validation Recall: 0.853763, Validation F1 Score: 0.834911
+Trial 21 finished with value: 0.8537634611129761 and parameters: {'learning_rate': 0.0005579957399671138, 'batch_size': 32, 'dropout_rate': 0.1786413383204044, 'weight_decay': 3.760815240254703e-05}. Best is trial 18 with value: 0.9053763151168823.
+Trial 21 finished with value: 0.8537634611129761 and parameters: {'learning_rate': 0.0005579957399671138, 'batch_size': 32, 'dropout_rate': 0.1786413383204044, 'weight_decay': 3.760815240254703e-05}. Best is trial 18 with value: 0.9053763151168823.
+2024-12-17 02:08:26 - ========================================================================================================================================================================================================
+2024-12-17 02:08:26 - Trial 22:
+2024-12-17 02:08:26 - Train Accuracy: 0.953750, Train Precision: 0.987696, Train Recall: 0.952022, Train F1 Score: 0.969531
+2024-12-17 02:08:26 - Validation Accuracy: 0.765391, Validation Precision: 0.816406, Validation Recall: 0.898925, Validation F1 Score: 0.855681
+Trial 22 finished with value: 0.898924708366394 and parameters: {'learning_rate': 0.0004844302104774519, 'batch_size': 32, 'dropout_rate': 0.1792445361957588, 'weight_decay': 0.00016542926735241053}. Best is trial 18 with value: 0.9053763151168823.
+Trial 22 finished with value: 0.898924708366394 and parameters: {'learning_rate': 0.0004844302104774519, 'batch_size': 32, 'dropout_rate': 0.1792445361957588, 'weight_decay': 0.00016542926735241053}. Best is trial 18 with value: 0.9053763151168823.
+2024-12-17 02:09:54 - ========================================================================================================================================================================================================
+2024-12-17 02:09:54 - Trial 23:
+2024-12-17 02:09:54 - Train Accuracy: 0.961667, Train Precision: 0.991634, Train Recall: 0.958491, Train F1 Score: 0.974781
+2024-12-17 02:09:54 - Validation Accuracy: 0.775374, Validation Precision: 0.803309, Validation Recall: 0.939785, Validation F1 Score: 0.866204
+Trial 23 finished with value: 0.9397849440574646 and parameters: {'learning_rate': 0.00025680395132748467, 'batch_size': 32, 'dropout_rate': 0.18310499303324032, 'weight_decay': 0.0001777762837739286}. Best is trial 23 with value: 0.9397849440574646.
+Trial 23 finished with value: 0.9397849440574646 and parameters: {'learning_rate': 0.00025680395132748467, 'batch_size': 32, 'dropout_rate': 0.18310499303324032, 'weight_decay': 0.0001777762837739286}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:11:21 - ========================================================================================================================================================================================================
+2024-12-17 02:11:21 - Trial 24:
+2024-12-17 02:11:21 - Train Accuracy: 0.933750, Train Precision: 0.981818, Train Recall: 0.931536, Train F1 Score: 0.956017
+2024-12-17 02:11:21 - Validation Accuracy: 0.693844, Validation Precision: 0.814318, Validation Recall: 0.782796, Validation F1 Score: 0.798246
+Trial 24 finished with value: 0.7827957272529602 and parameters: {'learning_rate': 0.00013449569723516388, 'batch_size': 32, 'dropout_rate': 0.18047623474572913, 'weight_decay': 0.00017609174485937903}. Best is trial 23 with value: 0.9397849440574646.
+Trial 24 finished with value: 0.7827957272529602 and parameters: {'learning_rate': 0.00013449569723516388, 'batch_size': 32, 'dropout_rate': 0.18047623474572913, 'weight_decay': 0.00017609174485937903}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:12:52 - ========================================================================================================================================================================================================
+2024-12-17 02:12:52 - Trial 25:
+2024-12-17 02:12:52 - Train Accuracy: 0.945833, Train Precision: 0.988115, Train Recall: 0.941240, Train F1 Score: 0.964108
+2024-12-17 02:12:52 - Validation Accuracy: 0.222962, Validation Precision: 0.333333, Validation Recall: 0.004301, Validation F1 Score: 0.008493
+Trial 25 finished with value: 0.004301075357943773 and parameters: {'learning_rate': 0.00023891548233700692, 'batch_size': 32, 'dropout_rate': 0.21077515853576664, 'weight_decay': 0.0002795145089681837}. Best is trial 23 with value: 0.9397849440574646.
+Trial 25 finished with value: 0.004301075357943773 and parameters: {'learning_rate': 0.00023891548233700692, 'batch_size': 32, 'dropout_rate': 0.21077515853576664, 'weight_decay': 0.0002795145089681837}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:14:22 - ========================================================================================================================================================================================================
+2024-12-17 02:14:22 - Trial 26:
+2024-12-17 02:14:22 - Train Accuracy: 0.950417, Train Precision: 0.985459, Train Recall: 0.949865, Train F1 Score: 0.967335
+2024-12-17 02:14:22 - Validation Accuracy: 0.742096, Validation Precision: 0.793561, Validation Recall: 0.901075, Validation F1 Score: 0.843907
+Trial 26 finished with value: 0.9010752439498901 and parameters: {'learning_rate': 0.0003896994634347501, 'batch_size': 32, 'dropout_rate': 0.18208395253622298, 'weight_decay': 0.000140186263167046}. Best is trial 23 with value: 0.9397849440574646.
+Trial 26 finished with value: 0.9010752439498901 and parameters: {'learning_rate': 0.0003896994634347501, 'batch_size': 32, 'dropout_rate': 0.18208395253622298, 'weight_decay': 0.000140186263167046}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:15:51 - ========================================================================================================================================================================================================
+2024-12-17 02:15:51 - Trial 27:
+2024-12-17 02:15:51 - Train Accuracy: 0.974167, Train Precision: 0.993939, Train Recall: 0.972507, Train F1 Score: 0.983106
+2024-12-17 02:15:51 - Validation Accuracy: 0.757072, Validation Precision: 0.789474, Validation Recall: 0.935484, Validation F1 Score: 0.856299
+Trial 27 finished with value: 0.9354838728904724 and parameters: {'learning_rate': 0.00025527652266158, 'batch_size': 32, 'dropout_rate': 0.15433966923918288, 'weight_decay': 0.0004367821063973958}. Best is trial 23 with value: 0.9397849440574646.
+Trial 27 finished with value: 0.9354838728904724 and parameters: {'learning_rate': 0.00025527652266158, 'batch_size': 32, 'dropout_rate': 0.15433966923918288, 'weight_decay': 0.0004367821063973958}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:17:21 - ========================================================================================================================================================================================================
+2024-12-17 02:17:21 - Trial 28:
+2024-12-17 02:17:21 - Train Accuracy: 0.978333, Train Precision: 0.995058, Train Recall: 0.976819, Train F1 Score: 0.985854
+2024-12-17 02:17:21 - Validation Accuracy: 0.750416, Validation Precision: 0.828810, Validation Recall: 0.853763, Validation F1 Score: 0.841102
+Trial 28 finished with value: 0.8537634611129761 and parameters: {'learning_rate': 0.00025451957920155123, 'batch_size': 32, 'dropout_rate': 0.16242952478978823, 'weight_decay': 0.0005171245501699068}. Best is trial 23 with value: 0.9397849440574646.
+Trial 28 finished with value: 0.8537634611129761 and parameters: {'learning_rate': 0.00025451957920155123, 'batch_size': 32, 'dropout_rate': 0.16242952478978823, 'weight_decay': 0.0005171245501699068}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:18:51 - ========================================================================================================================================================================================================
+2024-12-17 02:18:51 - Trial 29:
+2024-12-17 02:18:51 - Train Accuracy: 0.956667, Train Precision: 0.989927, Train Recall: 0.953639, Train F1 Score: 0.971444
+2024-12-17 02:18:51 - Validation Accuracy: 0.755408, Validation Precision: 0.805769, Validation Recall: 0.901075, Validation F1 Score: 0.850761
+Trial 29 finished with value: 0.9010752439498901 and parameters: {'learning_rate': 0.00011424300210394615, 'batch_size': 32, 'dropout_rate': 0.15098012084363024, 'weight_decay': 8.858866144679293e-05}. Best is trial 23 with value: 0.9397849440574646.
+Trial 29 finished with value: 0.9010752439498901 and parameters: {'learning_rate': 0.00011424300210394615, 'batch_size': 32, 'dropout_rate': 0.15098012084363024, 'weight_decay': 8.858866144679293e-05}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:20:20 - ========================================================================================================================================================================================================
+2024-12-17 02:20:20 - Trial 30:
+2024-12-17 02:20:20 - Train Accuracy: 0.930417, Train Precision: 0.980638, Train Recall: 0.928302, Train F1 Score: 0.953752
+2024-12-17 02:20:20 - Validation Accuracy: 0.777038, Validation Precision: 0.804788, Validation Recall: 0.939785, Validation F1 Score: 0.867063
+Trial 30 finished with value: 0.9397849440574646 and parameters: {'learning_rate': 0.00022735699080413571, 'batch_size': 32, 'dropout_rate': 0.22316895766550782, 'weight_decay': 0.0009143747499621098}. Best is trial 23 with value: 0.9397849440574646.
+Trial 30 finished with value: 0.9397849440574646 and parameters: {'learning_rate': 0.00022735699080413571, 'batch_size': 32, 'dropout_rate': 0.22316895766550782, 'weight_decay': 0.0009143747499621098}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:21:51 - ========================================================================================================================================================================================================
+2024-12-17 02:21:51 - Trial 31:
+2024-12-17 02:21:51 - Train Accuracy: 0.927083, Train Precision: 0.982759, Train Recall: 0.921833, Train F1 Score: 0.951321
+2024-12-17 02:21:51 - Validation Accuracy: 0.670549, Validation Precision: 0.820144, Validation Recall: 0.735484, Validation F1 Score: 0.775510
+Trial 31 finished with value: 0.7354838848114014 and parameters: {'learning_rate': 0.0002188761063047774, 'batch_size': 32, 'dropout_rate': 0.2256576154603525, 'weight_decay': 0.0009244318557808974}. Best is trial 23 with value: 0.9397849440574646.
+Trial 31 finished with value: 0.7354838848114014 and parameters: {'learning_rate': 0.0002188761063047774, 'batch_size': 32, 'dropout_rate': 0.2256576154603525, 'weight_decay': 0.0009244318557808974}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:23:20 - ========================================================================================================================================================================================================
+2024-12-17 02:23:20 - Trial 32:
+2024-12-17 02:23:20 - Train Accuracy: 0.939167, Train Precision: 0.980326, Train Recall: 0.940162, Train F1 Score: 0.959824
+2024-12-17 02:23:20 - Validation Accuracy: 0.735441, Validation Precision: 0.828326, Validation Recall: 0.830108, Validation F1 Score: 0.829216
+Trial 32 finished with value: 0.8301075100898743 and parameters: {'learning_rate': 0.000295649646865418, 'batch_size': 32, 'dropout_rate': 0.21575232397870756, 'weight_decay': 0.0006208761454163491}. Best is trial 23 with value: 0.9397849440574646.
+Trial 32 finished with value: 0.8301075100898743 and parameters: {'learning_rate': 0.000295649646865418, 'batch_size': 32, 'dropout_rate': 0.21575232397870756, 'weight_decay': 0.0006208761454163491}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:24:49 - ========================================================================================================================================================================================================
+2024-12-17 02:24:49 - Trial 33:
+2024-12-17 02:24:49 - Train Accuracy: 0.946667, Train Precision: 0.990904, Train Recall: 0.939623, Train F1 Score: 0.964582
+2024-12-17 02:24:49 - Validation Accuracy: 0.692180, Validation Precision: 0.801724, Validation Recall: 0.800000, Validation F1 Score: 0.800861
+Trial 33 finished with value: 0.800000011920929 and parameters: {'learning_rate': 9.973427390694608e-05, 'batch_size': 32, 'dropout_rate': 0.19046262650411855, 'weight_decay': 0.00024104429482700427}. Best is trial 23 with value: 0.9397849440574646.
+Trial 33 finished with value: 0.800000011920929 and parameters: {'learning_rate': 9.973427390694608e-05, 'batch_size': 32, 'dropout_rate': 0.19046262650411855, 'weight_decay': 0.00024104429482700427}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:26:19 - ========================================================================================================================================================================================================
+2024-12-17 02:26:19 - Trial 34:
+2024-12-17 02:26:19 - Train Accuracy: 0.901667, Train Precision: 0.974224, Train Recall: 0.896496, Train F1 Score: 0.933745
+2024-12-17 02:26:19 - Validation Accuracy: 0.720466, Validation Precision: 0.836735, Validation Recall: 0.793548, Validation F1 Score: 0.814570
+Trial 34 finished with value: 0.7935484051704407 and parameters: {'learning_rate': 0.00029413558532427023, 'batch_size': 32, 'dropout_rate': 0.2344901934484913, 'weight_decay': 0.0003739748948035375}. Best is trial 23 with value: 0.9397849440574646.
+Trial 34 finished with value: 0.7935484051704407 and parameters: {'learning_rate': 0.00029413558532427023, 'batch_size': 32, 'dropout_rate': 0.2344901934484913, 'weight_decay': 0.0003739748948035375}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:27:44 - ========================================================================================================================================================================================================
+2024-12-17 02:27:44 - Trial 35:
+2024-12-17 02:27:44 - Train Accuracy: 0.915000, Train Precision: 0.979663, Train Recall: 0.908895, Train F1 Score: 0.942953
+2024-12-17 02:27:44 - Validation Accuracy: 0.668885, Validation Precision: 0.850000, Validation Recall: 0.694624, Validation F1 Score: 0.764497
+Trial 35 finished with value: 0.6946236491203308 and parameters: {'learning_rate': 7.052030004494502e-05, 'batch_size': 32, 'dropout_rate': 0.17051201079683945, 'weight_decay': 0.0007187177933550944}. Best is trial 23 with value: 0.9397849440574646.
+Trial 35 finished with value: 0.6946236491203308 and parameters: {'learning_rate': 7.052030004494502e-05, 'batch_size': 32, 'dropout_rate': 0.17051201079683945, 'weight_decay': 0.0007187177933550944}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:29:05 - ========================================================================================================================================================================================================
+2024-12-17 02:29:05 - Trial 36:
+2024-12-17 02:29:05 - Train Accuracy: 0.929583, Train Precision: 0.987847, Train Recall: 0.920216, Train F1 Score: 0.952833
+2024-12-17 02:29:05 - Validation Accuracy: 0.735441, Validation Precision: 0.840000, Validation Recall: 0.812903, Validation F1 Score: 0.826230
+Trial 36 finished with value: 0.8129032254219055 and parameters: {'learning_rate': 0.00014474317663710202, 'batch_size': 32, 'dropout_rate': 0.21713820334631997, 'weight_decay': 0.00038791215800575336}. Best is trial 23 with value: 0.9397849440574646.
+Trial 36 finished with value: 0.8129032254219055 and parameters: {'learning_rate': 0.00014474317663710202, 'batch_size': 32, 'dropout_rate': 0.21713820334631997, 'weight_decay': 0.00038791215800575336}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:30:11 - ========================================================================================================================================================================================================
+2024-12-17 02:30:11 - Trial 37:
+2024-12-17 02:30:11 - Train Accuracy: 0.972500, Train Precision: 0.995568, Train Recall: 0.968733, Train F1 Score: 0.981967
+2024-12-17 02:30:11 - Validation Accuracy: 0.745424, Validation Precision: 0.813253, Validation Recall: 0.870968, Validation F1 Score: 0.841121
+Trial 37 finished with value: 0.8709677457809448 and parameters: {'learning_rate': 0.00021042354570947368, 'batch_size': 64, 'dropout_rate': 0.1917311989844177, 'weight_decay': 0.0002343059923450098}. Best is trial 23 with value: 0.9397849440574646.
+Trial 37 finished with value: 0.8709677457809448 and parameters: {'learning_rate': 0.00021042354570947368, 'batch_size': 64, 'dropout_rate': 0.1917311989844177, 'weight_decay': 0.0002343059923450098}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:31:34 - ========================================================================================================================================================================================================
+2024-12-17 02:31:34 - Trial 38:
+2024-12-17 02:31:34 - Train Accuracy: 0.919583, Train Precision: 0.983140, Train Recall: 0.911590, Train F1 Score: 0.946014
+2024-12-17 02:31:34 - Validation Accuracy: 0.728785, Validation Precision: 0.835556, Validation Recall: 0.808602, Validation F1 Score: 0.821858
+Trial 38 finished with value: 0.8086021542549133 and parameters: {'learning_rate': 0.00010538071340604291, 'batch_size': 32, 'dropout_rate': 0.20858581236625434, 'weight_decay': 0.0004711294685434612}. Best is trial 23 with value: 0.9397849440574646.
+Trial 38 finished with value: 0.8086021542549133 and parameters: {'learning_rate': 0.00010538071340604291, 'batch_size': 32, 'dropout_rate': 0.20858581236625434, 'weight_decay': 0.0004711294685434612}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:32:39 - ========================================================================================================================================================================================================
+2024-12-17 02:32:39 - Trial 39:
+2024-12-17 02:32:39 - Train Accuracy: 0.879167, Train Precision: 0.995567, Train Recall: 0.847439, Train F1 Score: 0.915550
+2024-12-17 02:32:39 - Validation Accuracy: 0.599002, Validation Precision: 0.847826, Validation Recall: 0.587097, Validation F1 Score: 0.693774
+Trial 39 finished with value: 0.5870967507362366 and parameters: {'learning_rate': 2.404899885627137e-05, 'batch_size': 64, 'dropout_rate': 0.1600315248865838, 'weight_decay': 0.0007617386485138459}. Best is trial 23 with value: 0.9397849440574646.
+Trial 39 finished with value: 0.5870967507362366 and parameters: {'learning_rate': 2.404899885627137e-05, 'batch_size': 64, 'dropout_rate': 0.1600315248865838, 'weight_decay': 0.0007617386485138459}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:33:58 - ========================================================================================================================================================================================================
+2024-12-17 02:33:58 - Trial 40:
+2024-12-17 02:33:58 - Train Accuracy: 0.914583, Train Precision: 0.979094, Train Recall: 0.908895, Train F1 Score: 0.942689
+2024-12-17 02:33:58 - Validation Accuracy: 0.697171, Validation Precision: 0.842615, Validation Recall: 0.748387, Validation F1 Score: 0.792711
+Trial 40 finished with value: 0.7483870983123779 and parameters: {'learning_rate': 0.00016556995419402833, 'batch_size': 32, 'dropout_rate': 0.24148025613152807, 'weight_decay': 0.0002852020013908512}. Best is trial 23 with value: 0.9397849440574646.
+Trial 40 finished with value: 0.7483870983123779 and parameters: {'learning_rate': 0.00016556995419402833, 'batch_size': 32, 'dropout_rate': 0.24148025613152807, 'weight_decay': 0.0002852020013908512}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:35:17 - ========================================================================================================================================================================================================
+2024-12-17 02:35:17 - Trial 41:
+2024-12-17 02:35:17 - Train Accuracy: 0.962500, Train Precision: 0.985691, Train Recall: 0.965499, Train F1 Score: 0.975490
+2024-12-17 02:35:17 - Validation Accuracy: 0.765391, Validation Precision: 0.818898, Validation Recall: 0.894624, Validation F1 Score: 0.855087
+Trial 41 finished with value: 0.8946236371994019 and parameters: {'learning_rate': 0.00038276933580786457, 'batch_size': 32, 'dropout_rate': 0.19074745809691107, 'weight_decay': 0.00013188345339759045}. Best is trial 23 with value: 0.9397849440574646.
+Trial 41 finished with value: 0.8946236371994019 and parameters: {'learning_rate': 0.00038276933580786457, 'batch_size': 32, 'dropout_rate': 0.19074745809691107, 'weight_decay': 0.00013188345339759045}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:36:36 - ========================================================================================================================================================================================================
+2024-12-17 02:36:36 - Trial 42:
+2024-12-17 02:36:36 - Train Accuracy: 0.967083, Train Precision: 0.993333, Train Recall: 0.963881, Train F1 Score: 0.978386
+2024-12-17 02:36:36 - Validation Accuracy: 0.757072, Validation Precision: 0.797020, Validation Recall: 0.920430, Validation F1 Score: 0.854291
+Trial 42 finished with value: 0.9204301238059998 and parameters: {'learning_rate': 0.0003333909209779954, 'batch_size': 32, 'dropout_rate': 0.17278611176162922, 'weight_decay': 8.50183672187716e-05}. Best is trial 23 with value: 0.9397849440574646.
+Trial 42 finished with value: 0.9204301238059998 and parameters: {'learning_rate': 0.0003333909209779954, 'batch_size': 32, 'dropout_rate': 0.17278611176162922, 'weight_decay': 8.50183672187716e-05}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:37:56 - ========================================================================================================================================================================================================
+2024-12-17 02:37:56 - Trial 43:
+2024-12-17 02:37:56 - Train Accuracy: 0.975000, Train Precision: 0.993403, Train Recall: 0.974124, Train F1 Score: 0.983669
+2024-12-17 02:37:56 - Validation Accuracy: 0.745424, Validation Precision: 0.817073, Validation Recall: 0.864516, Validation F1 Score: 0.840125
+Trial 43 finished with value: 0.8645161390304565 and parameters: {'learning_rate': 0.0002924437607830852, 'batch_size': 32, 'dropout_rate': 0.1735912618185926, 'weight_decay': 8.297931400038272e-05}. Best is trial 23 with value: 0.9397849440574646.
+Trial 43 finished with value: 0.8645161390304565 and parameters: {'learning_rate': 0.0002924437607830852, 'batch_size': 32, 'dropout_rate': 0.1735912618185926, 'weight_decay': 8.297931400038272e-05}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:39:15 - ========================================================================================================================================================================================================
+2024-12-17 02:39:15 - Trial 44:
+2024-12-17 02:39:15 - Train Accuracy: 0.970833, Train Precision: 0.992822, Train Recall: 0.969272, Train F1 Score: 0.980906
+2024-12-17 02:39:15 - Validation Accuracy: 0.737105, Validation Precision: 0.796905, Validation Recall: 0.886021, Validation F1 Score: 0.839104
+Trial 44 finished with value: 0.8860214948654175 and parameters: {'learning_rate': 0.0005039804600531043, 'batch_size': 32, 'dropout_rate': 0.1541542499531968, 'weight_decay': 7.710428460212911e-05}. Best is trial 23 with value: 0.9397849440574646.
+Trial 44 finished with value: 0.8860214948654175 and parameters: {'learning_rate': 0.0005039804600531043, 'batch_size': 32, 'dropout_rate': 0.1541542499531968, 'weight_decay': 7.710428460212911e-05}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:40:19 - ========================================================================================================================================================================================================
+2024-12-17 02:40:19 - Trial 45:
+2024-12-17 02:40:19 - Train Accuracy: 0.959167, Train Precision: 0.986165, Train Recall: 0.960647, Train F1 Score: 0.973239
+2024-12-17 02:40:19 - Validation Accuracy: 0.727121, Validation Precision: 0.811594, Validation Recall: 0.843011, Validation F1 Score: 0.827004
+Trial 45 finished with value: 0.8430107235908508 and parameters: {'learning_rate': 0.0006547728669272046, 'batch_size': 64, 'dropout_rate': 0.22464896314909777, 'weight_decay': 0.00043239363823004427}. Best is trial 23 with value: 0.9397849440574646.
+Trial 45 finished with value: 0.8430107235908508 and parameters: {'learning_rate': 0.0006547728669272046, 'batch_size': 64, 'dropout_rate': 0.22464896314909777, 'weight_decay': 0.00043239363823004427}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:41:38 - ========================================================================================================================================================================================================
+2024-12-17 02:41:38 - Trial 46:
+2024-12-17 02:41:38 - Train Accuracy: 0.951250, Train Precision: 0.983853, Train Recall: 0.952561, Train F1 Score: 0.967954
+2024-12-17 02:41:38 - Validation Accuracy: 0.725458, Validation Precision: 0.812500, Validation Recall: 0.838710, Validation F1 Score: 0.825397
+Trial 46 finished with value: 0.8387096524238586 and parameters: {'learning_rate': 0.0003499673338044288, 'batch_size': 32, 'dropout_rate': 0.19958012830291882, 'weight_decay': 0.00029685658705011855}. Best is trial 23 with value: 0.9397849440574646.
+Trial 46 finished with value: 0.8387096524238586 and parameters: {'learning_rate': 0.0003499673338044288, 'batch_size': 32, 'dropout_rate': 0.19958012830291882, 'weight_decay': 0.00029685658705011855}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:42:57 - ========================================================================================================================================================================================================
+2024-12-17 02:42:57 - Trial 47:
+2024-12-17 02:42:57 - Train Accuracy: 0.960833, Train Precision: 0.988353, Train Recall: 0.960647, Train F1 Score: 0.974303
+2024-12-17 02:42:57 - Validation Accuracy: 0.753744, Validation Precision: 0.833684, Validation Recall: 0.851613, Validation F1 Score: 0.842553
+Trial 47 finished with value: 0.85161292552948 and parameters: {'learning_rate': 0.000255791550704408, 'batch_size': 32, 'dropout_rate': 0.18734690961562203, 'weight_decay': 0.00021188488127433003}. Best is trial 23 with value: 0.9397849440574646.
+Trial 47 finished with value: 0.85161292552948 and parameters: {'learning_rate': 0.000255791550704408, 'batch_size': 32, 'dropout_rate': 0.18734690961562203, 'weight_decay': 0.00021188488127433003}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:44:16 - ========================================================================================================================================================================================================
+2024-12-17 02:44:16 - Trial 48:
+2024-12-17 02:44:16 - Train Accuracy: 0.957083, Train Precision: 0.991583, Train Recall: 0.952561, Train F1 Score: 0.971680
+2024-12-17 02:44:16 - Validation Accuracy: 0.698835, Validation Precision: 0.828704, Validation Recall: 0.769892, Validation F1 Score: 0.798216
+Trial 48 finished with value: 0.7698924541473389 and parameters: {'learning_rate': 0.00013321650843187044, 'batch_size': 32, 'dropout_rate': 0.1668468239718688, 'weight_decay': 9.949600989328163e-05}. Best is trial 23 with value: 0.9397849440574646.
+Trial 48 finished with value: 0.7698924541473389 and parameters: {'learning_rate': 0.00013321650843187044, 'batch_size': 32, 'dropout_rate': 0.1668468239718688, 'weight_decay': 9.949600989328163e-05}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:45:20 - ========================================================================================================================================================================================================
+2024-12-17 02:45:20 - Trial 49:
+2024-12-17 02:45:20 - Train Accuracy: 0.955000, Train Precision: 0.987716, Train Recall: 0.953639, Train F1 Score: 0.970379
+2024-12-17 02:45:20 - Validation Accuracy: 0.728785, Validation Precision: 0.822650, Validation Recall: 0.827957, Validation F1 Score: 0.825295
+Trial 49 finished with value: 0.8279569745063782 and parameters: {'learning_rate': 0.00019368980716235595, 'batch_size': 64, 'dropout_rate': 0.20680529901424688, 'weight_decay': 0.0009814339349408447}. Best is trial 23 with value: 0.9397849440574646.
+Trial 49 finished with value: 0.8279569745063782 and parameters: {'learning_rate': 0.00019368980716235595, 'batch_size': 64, 'dropout_rate': 0.20680529901424688, 'weight_decay': 0.0009814339349408447}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:46:39 - ========================================================================================================================================================================================================
+2024-12-17 02:46:39 - Trial 50:
+2024-12-17 02:46:39 - Train Accuracy: 0.953333, Train Precision: 0.985515, Train Recall: 0.953639, Train F1 Score: 0.969315
+2024-12-17 02:46:39 - Validation Accuracy: 0.747088, Validation Precision: 0.813627, Validation Recall: 0.873118, Validation F1 Score: 0.842324
+Trial 50 finished with value: 0.8731182813644409 and parameters: {'learning_rate': 0.00044895325228829365, 'batch_size': 32, 'dropout_rate': 0.22070416765629108, 'weight_decay': 0.00014613847789590696}. Best is trial 23 with value: 0.9397849440574646.
+Trial 50 finished with value: 0.8731182813644409 and parameters: {'learning_rate': 0.00044895325228829365, 'batch_size': 32, 'dropout_rate': 0.22070416765629108, 'weight_decay': 0.00014613847789590696}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:47:58 - ========================================================================================================================================================================================================
+2024-12-17 02:47:58 - Trial 51:
+2024-12-17 02:47:58 - Train Accuracy: 0.954167, Train Precision: 0.987703, Train Recall: 0.952561, Train F1 Score: 0.969813
+2024-12-17 02:47:58 - Validation Accuracy: 0.743760, Validation Precision: 0.828753, Validation Recall: 0.843011, Validation F1 Score: 0.835821
+Trial 51 finished with value: 0.8430107235908508 and parameters: {'learning_rate': 0.00034991144616139516, 'batch_size': 32, 'dropout_rate': 0.1838551341903212, 'weight_decay': 0.00013765070180162125}. Best is trial 23 with value: 0.9397849440574646.
+Trial 51 finished with value: 0.8430107235908508 and parameters: {'learning_rate': 0.00034991144616139516, 'batch_size': 32, 'dropout_rate': 0.1838551341903212, 'weight_decay': 0.00013765070180162125}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:49:17 - ========================================================================================================================================================================================================
+2024-12-17 02:49:17 - Trial 52:
+2024-12-17 02:49:17 - Train Accuracy: 0.926250, Train Precision: 0.978335, Train Recall: 0.925067, Train F1 Score: 0.950956
+2024-12-17 02:49:17 - Validation Accuracy: 0.718802, Validation Precision: 0.825991, Validation Recall: 0.806452, Validation F1 Score: 0.816104
+Trial 52 finished with value: 0.8064516186714172 and parameters: {'learning_rate': 0.0006460601325564893, 'batch_size': 32, 'dropout_rate': 0.27473597823679324, 'weight_decay': 0.00010614972946884926}. Best is trial 23 with value: 0.9397849440574646.
+Trial 52 finished with value: 0.8064516186714172 and parameters: {'learning_rate': 0.0006460601325564893, 'batch_size': 32, 'dropout_rate': 0.27473597823679324, 'weight_decay': 0.00010614972946884926}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:50:36 - ========================================================================================================================================================================================================
+2024-12-17 02:50:36 - Trial 53:
+2024-12-17 02:50:36 - Train Accuracy: 0.947917, Train Precision: 0.987050, Train Recall: 0.945013, Train F1 Score: 0.965574
+2024-12-17 02:50:36 - Validation Accuracy: 0.727121, Validation Precision: 0.811594, Validation Recall: 0.843011, Validation F1 Score: 0.827004
+Trial 53 finished with value: 0.8430107235908508 and parameters: {'learning_rate': 0.000434513379680556, 'batch_size': 32, 'dropout_rate': 0.17378315727871607, 'weight_decay': 0.00019597393266418438}. Best is trial 23 with value: 0.9397849440574646.
+Trial 53 finished with value: 0.8430107235908508 and parameters: {'learning_rate': 0.000434513379680556, 'batch_size': 32, 'dropout_rate': 0.17378315727871607, 'weight_decay': 0.00019597393266418438}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:51:56 - ========================================================================================================================================================================================================
+2024-12-17 02:51:56 - Trial 54:
+2024-12-17 02:51:56 - Train Accuracy: 0.940000, Train Precision: 0.986356, Train Recall: 0.935310, Train F1 Score: 0.960155
+2024-12-17 02:51:56 - Validation Accuracy: 0.607321, Validation Precision: 0.794344, Validation Recall: 0.664516, Validation F1 Score: 0.723653
+Trial 54 finished with value: 0.6645161509513855 and parameters: {'learning_rate': 0.00026869736656332145, 'batch_size': 32, 'dropout_rate': 0.1965162821842396, 'weight_decay': 5.7135780136971206e-05}. Best is trial 23 with value: 0.9397849440574646.
+Trial 54 finished with value: 0.6645161509513855 and parameters: {'learning_rate': 0.00026869736656332145, 'batch_size': 32, 'dropout_rate': 0.1965162821842396, 'weight_decay': 5.7135780136971206e-05}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:53:15 - ========================================================================================================================================================================================================
+2024-12-17 02:53:15 - Trial 55:
+2024-12-17 02:53:15 - Train Accuracy: 0.981667, Train Precision: 0.994538, Train Recall: 0.981671, Train F1 Score: 0.988063
+2024-12-17 02:53:15 - Validation Accuracy: 0.755408, Validation Precision: 0.803435, Validation Recall: 0.905376, Validation F1 Score: 0.851365
+Trial 55 finished with value: 0.9053763151168823 and parameters: {'learning_rate': 0.00035557939448160793, 'batch_size': 32, 'dropout_rate': 0.15857654767026655, 'weight_decay': 0.00015497733285827397}. Best is trial 23 with value: 0.9397849440574646.
+Trial 55 finished with value: 0.9053763151168823 and parameters: {'learning_rate': 0.00035557939448160793, 'batch_size': 32, 'dropout_rate': 0.15857654767026655, 'weight_decay': 0.00015497733285827397}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:54:34 - ========================================================================================================================================================================================================
+2024-12-17 02:54:34 - Trial 56:
+2024-12-17 02:54:34 - Train Accuracy: 0.967500, Train Precision: 0.992790, Train Recall: 0.964960, Train F1 Score: 0.978677
+2024-12-17 02:54:34 - Validation Accuracy: 0.730449, Validation Precision: 0.845102, Validation Recall: 0.797849, Validation F1 Score: 0.820796
+Trial 56 finished with value: 0.7978494763374329 and parameters: {'learning_rate': 0.00017074581762618708, 'batch_size': 32, 'dropout_rate': 0.15837684762615542, 'weight_decay': 4.296823605773e-05}. Best is trial 23 with value: 0.9397849440574646.
+Trial 56 finished with value: 0.7978494763374329 and parameters: {'learning_rate': 0.00017074581762618708, 'batch_size': 32, 'dropout_rate': 0.15837684762615542, 'weight_decay': 4.296823605773e-05}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:55:53 - ========================================================================================================================================================================================================
+2024-12-17 02:55:53 - Trial 57:
+2024-12-17 02:55:53 - Train Accuracy: 0.964167, Train Precision: 0.992758, Train Recall: 0.960647, Train F1 Score: 0.976438
+2024-12-17 02:55:53 - Validation Accuracy: 0.700499, Validation Precision: 0.830626, Validation Recall: 0.769892, Validation F1 Score: 0.799107
+Trial 57 finished with value: 0.7698924541473389 and parameters: {'learning_rate': 0.00031533790682290486, 'batch_size': 32, 'dropout_rate': 0.16839130758316323, 'weight_decay': 7.161493390674601e-05}. Best is trial 23 with value: 0.9397849440574646.
+Trial 57 finished with value: 0.7698924541473389 and parameters: {'learning_rate': 0.00031533790682290486, 'batch_size': 32, 'dropout_rate': 0.16839130758316323, 'weight_decay': 7.161493390674601e-05}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:56:54 - ========================================================================================================================================================================================================
+2024-12-17 02:56:54 - Trial 58:
+2024-12-17 02:56:54 - Train Accuracy: 0.977083, Train Precision: 0.993421, Train Recall: 0.976819, Train F1 Score: 0.985050
+2024-12-17 02:56:54 - Validation Accuracy: 0.703827, Validation Precision: 0.808602, Validation Recall: 0.808602, Validation F1 Score: 0.808602
+Trial 58 finished with value: 0.8086021542549133 and parameters: {'learning_rate': 0.0008039310312806702, 'batch_size': 128, 'dropout_rate': 0.1507200415163298, 'weight_decay': 0.00011444477173170403}. Best is trial 23 with value: 0.9397849440574646.
+Trial 58 finished with value: 0.8086021542549133 and parameters: {'learning_rate': 0.0008039310312806702, 'batch_size': 128, 'dropout_rate': 0.1507200415163298, 'weight_decay': 0.00011444477173170403}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:58:13 - ========================================================================================================================================================================================================
+2024-12-17 02:58:13 - Trial 59:
+2024-12-17 02:58:13 - Train Accuracy: 0.967083, Train Precision: 0.993333, Train Recall: 0.963881, Train F1 Score: 0.978386
+2024-12-17 02:58:13 - Validation Accuracy: 0.680532, Validation Precision: 0.784969, Validation Recall: 0.808602, Validation F1 Score: 0.796610
+Trial 59 finished with value: 0.8086021542549133 and parameters: {'learning_rate': 0.00021743476836973111, 'batch_size': 32, 'dropout_rate': 0.1627395815898098, 'weight_decay': 0.00032787183206641645}. Best is trial 23 with value: 0.9397849440574646.
+Trial 59 finished with value: 0.8086021542549133 and parameters: {'learning_rate': 0.00021743476836973111, 'batch_size': 32, 'dropout_rate': 0.1627395815898098, 'weight_decay': 0.00032787183206641645}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 02:59:32 - ========================================================================================================================================================================================================
+2024-12-17 02:59:32 - Trial 60:
+2024-12-17 02:59:32 - Train Accuracy: 0.965000, Train Precision: 0.995523, Train Recall: 0.959030, Train F1 Score: 0.976936
+2024-12-17 02:59:32 - Validation Accuracy: 0.728785, Validation Precision: 0.785985, Validation Recall: 0.892473, Validation F1 Score: 0.835851
+Trial 60 finished with value: 0.8924731016159058 and parameters: {'learning_rate': 0.0002239055054218056, 'batch_size': 32, 'dropout_rate': 0.1762925567634565, 'weight_decay': 0.0001669628195643204}. Best is trial 23 with value: 0.9397849440574646.
+Trial 60 finished with value: 0.8924731016159058 and parameters: {'learning_rate': 0.0002239055054218056, 'batch_size': 32, 'dropout_rate': 0.1762925567634565, 'weight_decay': 0.0001669628195643204}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 03:00:51 - ========================================================================================================================================================================================================
+2024-12-17 03:00:51 - Trial 61:
+2024-12-17 03:00:51 - Train Accuracy: 0.980833, Train Precision: 0.998347, Train Recall: 0.976819, Train F1 Score: 0.987466
+2024-12-17 03:00:51 - Validation Accuracy: 0.713810, Validation Precision: 0.830700, Validation Recall: 0.791398, Validation F1 Score: 0.810573
+Trial 61 finished with value: 0.7913978695869446 and parameters: {'learning_rate': 0.00039821750075087384, 'batch_size': 32, 'dropout_rate': 0.18323876720624604, 'weight_decay': 0.0002550217120887064}. Best is trial 23 with value: 0.9397849440574646.
+Trial 61 finished with value: 0.7913978695869446 and parameters: {'learning_rate': 0.00039821750075087384, 'batch_size': 32, 'dropout_rate': 0.18323876720624604, 'weight_decay': 0.0002550217120887064}. Best is trial 23 with value: 0.9397849440574646.
+2024-12-17 03:02:10 - ========================================================================================================================================================================================================
+2024-12-17 03:02:10 - Trial 62:
+2024-12-17 03:02:10 - Train Accuracy: 0.959583, Train Precision: 0.987791, Train Recall: 0.959569, Train F1 Score: 0.973476
+2024-12-17 03:02:10 - Validation Accuracy: 0.777038, Validation Precision: 0.783876, Validation Recall: 0.982796, Validation F1 Score: 0.872137
+Trial 62 finished with value: 0.9827957153320312 and parameters: {'learning_rate': 0.00036629023640623776, 'batch_size': 32, 'dropout_rate': 0.19566486542199024, 'weight_decay': 0.0001236434480604789}. Best is trial 62 with value: 0.9827957153320312.
+Trial 62 finished with value: 0.9827957153320312 and parameters: {'learning_rate': 0.00036629023640623776, 'batch_size': 32, 'dropout_rate': 0.19566486542199024, 'weight_decay': 0.0001236434480604789}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:03:29 - ========================================================================================================================================================================================================
+2024-12-17 03:03:29 - Trial 63:
+2024-12-17 03:03:29 - Train Accuracy: 0.944167, Train Precision: 0.985884, Train Recall: 0.941240, Train F1 Score: 0.963045
+2024-12-17 03:03:29 - Validation Accuracy: 0.740433, Validation Precision: 0.819876, Validation Recall: 0.851613, Validation F1 Score: 0.835443
+Trial 63 finished with value: 0.85161292552948 and parameters: {'learning_rate': 0.0005538930574014853, 'batch_size': 32, 'dropout_rate': 0.20352270167059958, 'weight_decay': 9.461089521569417e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 63 finished with value: 0.85161292552948 and parameters: {'learning_rate': 0.0005538930574014853, 'batch_size': 32, 'dropout_rate': 0.20352270167059958, 'weight_decay': 9.461089521569417e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:04:48 - ========================================================================================================================================================================================================
+2024-12-17 03:04:48 - Trial 64:
+2024-12-17 03:04:48 - Train Accuracy: 0.966667, Train Precision: 0.992782, Train Recall: 0.963881, Train F1 Score: 0.978118
+2024-12-17 03:04:48 - Validation Accuracy: 0.768719, Validation Precision: 0.813462, Validation Recall: 0.909677, Validation F1 Score: 0.858883
+Trial 64 finished with value: 0.9096774458885193 and parameters: {'learning_rate': 0.00033383194943741, 'batch_size': 32, 'dropout_rate': 0.19528821766864696, 'weight_decay': 0.00015561211234169632}. Best is trial 62 with value: 0.9827957153320312.
+Trial 64 finished with value: 0.9096774458885193 and parameters: {'learning_rate': 0.00033383194943741, 'batch_size': 32, 'dropout_rate': 0.19528821766864696, 'weight_decay': 0.00015561211234169632}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:06:08 - ========================================================================================================================================================================================================
+2024-12-17 03:06:08 - Trial 65:
+2024-12-17 03:06:08 - Train Accuracy: 0.963750, Train Precision: 0.993304, Train Recall: 0.959569, Train F1 Score: 0.976145
+2024-12-17 03:06:08 - Validation Accuracy: 0.752080, Validation Precision: 0.792593, Validation Recall: 0.920430, Validation F1 Score: 0.851741
+Trial 65 finished with value: 0.9204301238059998 and parameters: {'learning_rate': 0.00031094953335030135, 'batch_size': 32, 'dropout_rate': 0.1947398688748643, 'weight_decay': 6.435412389560543e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 65 finished with value: 0.9204301238059998 and parameters: {'learning_rate': 0.00031094953335030135, 'batch_size': 32, 'dropout_rate': 0.1947398688748643, 'weight_decay': 6.435412389560543e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:07:27 - ========================================================================================================================================================================================================
+2024-12-17 03:07:27 - Trial 66:
+2024-12-17 03:07:27 - Train Accuracy: 0.962083, Train Precision: 0.988914, Train Recall: 0.961725, Train F1 Score: 0.975130
+2024-12-17 03:07:27 - Validation Accuracy: 0.755408, Validation Precision: 0.779930, Validation Recall: 0.952688, Validation F1 Score: 0.857696
+Trial 66 finished with value: 0.9526881575584412 and parameters: {'learning_rate': 0.0003225723231800388, 'batch_size': 32, 'dropout_rate': 0.21173558298479425, 'weight_decay': 3.579798825436393e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 66 finished with value: 0.9526881575584412 and parameters: {'learning_rate': 0.0003225723231800388, 'batch_size': 32, 'dropout_rate': 0.21173558298479425, 'weight_decay': 3.579798825436393e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:08:46 - ========================================================================================================================================================================================================
+2024-12-17 03:08:46 - Trial 67:
+2024-12-17 03:08:46 - Train Accuracy: 0.940417, Train Precision: 0.985812, Train Recall: 0.936388, Train F1 Score: 0.960464
+2024-12-17 03:08:46 - Validation Accuracy: 0.758735, Validation Precision: 0.803030, Validation Recall: 0.911828, Validation F1 Score: 0.853978
+Trial 67 finished with value: 0.9118279814720154 and parameters: {'learning_rate': 0.0002527968105844382, 'batch_size': 32, 'dropout_rate': 0.21154931705201688, 'weight_decay': 2.697825934062884e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 67 finished with value: 0.9118279814720154 and parameters: {'learning_rate': 0.0002527968105844382, 'batch_size': 32, 'dropout_rate': 0.21154931705201688, 'weight_decay': 2.697825934062884e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:09:47 - ========================================================================================================================================================================================================
+2024-12-17 03:09:47 - Trial 68:
+2024-12-17 03:09:47 - Train Accuracy: 0.961250, Train Precision: 0.989989, Train Recall: 0.959569, Train F1 Score: 0.974541
+2024-12-17 03:09:47 - Validation Accuracy: 0.753744, Validation Precision: 0.820202, Validation Recall: 0.873118, Validation F1 Score: 0.845833
+Trial 68 finished with value: 0.8731182813644409 and parameters: {'learning_rate': 0.0004253899022263176, 'batch_size': 128, 'dropout_rate': 0.2481408579590937, 'weight_decay': 1.9338954248203188e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 68 finished with value: 0.8731182813644409 and parameters: {'learning_rate': 0.0004253899022263176, 'batch_size': 128, 'dropout_rate': 0.2481408579590937, 'weight_decay': 1.9338954248203188e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:10:51 - ========================================================================================================================================================================================================
+2024-12-17 03:10:51 - Trial 69:
+2024-12-17 03:10:51 - Train Accuracy: 0.945417, Train Precision: 0.986456, Train Recall: 0.942318, Train F1 Score: 0.963882
+2024-12-17 03:10:51 - Validation Accuracy: 0.758735, Validation Precision: 0.807692, Validation Recall: 0.903226, Validation F1 Score: 0.852792
+Trial 69 finished with value: 0.9032257795333862 and parameters: {'learning_rate': 0.0005115418739202134, 'batch_size': 64, 'dropout_rate': 0.2142173317162931, 'weight_decay': 3.32862775593347e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 69 finished with value: 0.9032257795333862 and parameters: {'learning_rate': 0.0005115418739202134, 'batch_size': 64, 'dropout_rate': 0.2142173317162931, 'weight_decay': 3.32862775593347e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:12:10 - ========================================================================================================================================================================================================
+2024-12-17 03:12:10 - Trial 70:
+2024-12-17 03:12:10 - Train Accuracy: 0.923750, Train Precision: 0.985482, Train Recall: 0.914825, Train F1 Score: 0.948840
+2024-12-17 03:12:10 - Validation Accuracy: 0.562396, Validation Precision: 0.790230, Validation Recall: 0.591398, Validation F1 Score: 0.676507
+Trial 70 finished with value: 0.5913978219032288 and parameters: {'learning_rate': 0.00018966650195224576, 'batch_size': 32, 'dropout_rate': 0.22903620702306662, 'weight_decay': 6.0218990235033327e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 70 finished with value: 0.5913978219032288 and parameters: {'learning_rate': 0.00018966650195224576, 'batch_size': 32, 'dropout_rate': 0.22903620702306662, 'weight_decay': 6.0218990235033327e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:13:29 - ========================================================================================================================================================================================================
+2024-12-17 03:13:29 - Trial 71:
+2024-12-17 03:13:29 - Train Accuracy: 0.955417, Train Precision: 0.987723, Train Recall: 0.954178, Train F1 Score: 0.970661
+2024-12-17 03:13:29 - Validation Accuracy: 0.745424, Validation Precision: 0.792135, Validation Recall: 0.909677, Validation F1 Score: 0.846847
+Trial 71 finished with value: 0.9096774458885193 and parameters: {'learning_rate': 0.0002916992523302454, 'batch_size': 32, 'dropout_rate': 0.21069465790634587, 'weight_decay': 2.5616958663760863e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 71 finished with value: 0.9096774458885193 and parameters: {'learning_rate': 0.0002916992523302454, 'batch_size': 32, 'dropout_rate': 0.21069465790634587, 'weight_decay': 2.5616958663760863e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:14:48 - ========================================================================================================================================================================================================
+2024-12-17 03:14:48 - Trial 72:
+2024-12-17 03:14:48 - Train Accuracy: 0.963333, Train Precision: 0.988932, Train Recall: 0.963342, Train F1 Score: 0.975969
+2024-12-17 03:14:48 - Validation Accuracy: 0.718802, Validation Precision: 0.827434, Validation Recall: 0.804301, Validation F1 Score: 0.815703
+Trial 72 finished with value: 0.8043010830879211 and parameters: {'learning_rate': 0.00024789061646674285, 'batch_size': 32, 'dropout_rate': 0.18751768841214211, 'weight_decay': 3.760703610665492e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 72 finished with value: 0.8043010830879211 and parameters: {'learning_rate': 0.00024789061646674285, 'batch_size': 32, 'dropout_rate': 0.18751768841214211, 'weight_decay': 3.760703610665492e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:16:07 - ========================================================================================================================================================================================================
+2024-12-17 03:16:07 - Trial 73:
+2024-12-17 03:16:07 - Train Accuracy: 0.950000, Train Precision: 0.989284, Train Recall: 0.945553, Train F1 Score: 0.966924
+2024-12-17 03:16:07 - Validation Accuracy: 0.715474, Validation Precision: 0.815451, Validation Recall: 0.817204, Validation F1 Score: 0.816327
+Trial 73 finished with value: 0.8172042965888977 and parameters: {'learning_rate': 0.00015433924790145167, 'batch_size': 32, 'dropout_rate': 0.19514867452894663, 'weight_decay': 2.2135660880864168e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 73 finished with value: 0.8172042965888977 and parameters: {'learning_rate': 0.00015433924790145167, 'batch_size': 32, 'dropout_rate': 0.19514867452894663, 'weight_decay': 2.2135660880864168e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:17:26 - ========================================================================================================================================================================================================
+2024-12-17 03:17:26 - Trial 74:
+2024-12-17 03:17:26 - Train Accuracy: 0.967083, Train Precision: 0.992239, Train Recall: 0.964960, Train F1 Score: 0.978409
+2024-12-17 03:17:26 - Validation Accuracy: 0.772047, Validation Precision: 0.805970, Validation Recall: 0.929032, Validation F1 Score: 0.863137
+Trial 74 finished with value: 0.9290322661399841 and parameters: {'learning_rate': 0.0002628742080814352, 'batch_size': 32, 'dropout_rate': 0.21997116333850464, 'weight_decay': 1.4217382174920343e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 74 finished with value: 0.9290322661399841 and parameters: {'learning_rate': 0.0002628742080814352, 'batch_size': 32, 'dropout_rate': 0.21997116333850464, 'weight_decay': 1.4217382174920343e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:18:45 - ========================================================================================================================================================================================================
+2024-12-17 03:18:45 - Trial 75:
+2024-12-17 03:18:45 - Train Accuracy: 0.940417, Train Precision: 0.985261, Train Recall: 0.936927, Train F1 Score: 0.960486
+2024-12-17 03:18:45 - Validation Accuracy: 0.763727, Validation Precision: 0.785841, Validation Recall: 0.954839, Validation F1 Score: 0.862136
+Trial 75 finished with value: 0.9548386931419373 and parameters: {'learning_rate': 0.0003141522888226021, 'batch_size': 32, 'dropout_rate': 0.23309831251103053, 'weight_decay': 4.7341631695524224e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 75 finished with value: 0.9548386931419373 and parameters: {'learning_rate': 0.0003141522888226021, 'batch_size': 32, 'dropout_rate': 0.23309831251103053, 'weight_decay': 4.7341631695524224e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:20:04 - ========================================================================================================================================================================================================
+2024-12-17 03:20:04 - Trial 76:
+2024-12-17 03:20:04 - Train Accuracy: 0.908333, Train Precision: 0.980600, Train Recall: 0.899191, Train F1 Score: 0.938133
+2024-12-17 03:20:04 - Validation Accuracy: 0.757072, Validation Precision: 0.795918, Validation Recall: 0.922581, Validation F1 Score: 0.854582
+Trial 76 finished with value: 0.9225806593894958 and parameters: {'learning_rate': 0.0001238800822049273, 'batch_size': 32, 'dropout_rate': 0.23435342697823106, 'weight_decay': 1.4852244648475274e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 76 finished with value: 0.9225806593894958 and parameters: {'learning_rate': 0.0001238800822049273, 'batch_size': 32, 'dropout_rate': 0.23435342697823106, 'weight_decay': 1.4852244648475274e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:21:23 - ========================================================================================================================================================================================================
+2024-12-17 03:21:23 - Trial 77:
+2024-12-17 03:21:23 - Train Accuracy: 0.920000, Train Precision: 0.986542, Train Recall: 0.908895, Train F1 Score: 0.946128
+2024-12-17 03:21:23 - Validation Accuracy: 0.693844, Validation Precision: 0.803456, Validation Recall: 0.800000, Validation F1 Score: 0.801724
+Trial 77 finished with value: 0.800000011920929 and parameters: {'learning_rate': 0.0001273134313020376, 'batch_size': 32, 'dropout_rate': 0.23588093996167603, 'weight_decay': 1.4474267253446811e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 77 finished with value: 0.800000011920929 and parameters: {'learning_rate': 0.0001273134313020376, 'batch_size': 32, 'dropout_rate': 0.23588093996167603, 'weight_decay': 1.4474267253446811e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:22:42 - ========================================================================================================================================================================================================
+2024-12-17 03:22:42 - Trial 78:
+2024-12-17 03:22:42 - Train Accuracy: 0.841250, Train Precision: 0.957196, Train Recall: 0.831806, Train F1 Score: 0.890107
+2024-12-17 03:22:42 - Validation Accuracy: 0.632280, Validation Precision: 0.824468, Validation Recall: 0.666667, Validation F1 Score: 0.737218
+Trial 78 finished with value: 0.6666666865348816 and parameters: {'learning_rate': 7.434312576148508e-05, 'batch_size': 32, 'dropout_rate': 0.2431615592610094, 'weight_decay': 1.3286228930245457e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 78 finished with value: 0.6666666865348816 and parameters: {'learning_rate': 7.434312576148508e-05, 'batch_size': 32, 'dropout_rate': 0.2431615592610094, 'weight_decay': 1.3286228930245457e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:24:02 - ========================================================================================================================================================================================================
+2024-12-17 03:24:02 - Trial 79:
+2024-12-17 03:24:02 - Train Accuracy: 0.937083, Train Precision: 0.986857, Train Recall: 0.930997, Train F1 Score: 0.958114
+2024-12-17 03:24:02 - Validation Accuracy: 0.743760, Validation Precision: 0.821946, Validation Recall: 0.853763, Validation F1 Score: 0.837553
+Trial 79 finished with value: 0.8537634611129761 and parameters: {'learning_rate': 0.00019548818828420963, 'batch_size': 32, 'dropout_rate': 0.22121139120180205, 'weight_decay': 1.6250598747240128e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 79 finished with value: 0.8537634611129761 and parameters: {'learning_rate': 0.00019548818828420963, 'batch_size': 32, 'dropout_rate': 0.22121139120180205, 'weight_decay': 1.6250598747240128e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:25:02 - ========================================================================================================================================================================================================
+2024-12-17 03:25:02 - Trial 80:
+2024-12-17 03:25:02 - Train Accuracy: 0.836667, Train Precision: 0.991269, Train Recall: 0.795687, Train F1 Score: 0.882775
+2024-12-17 03:25:02 - Validation Accuracy: 0.477537, Validation Precision: 0.864734, Validation Recall: 0.384946, Validation F1 Score: 0.532738
+Trial 80 finished with value: 0.38494622707366943 and parameters: {'learning_rate': 4.9611545838376664e-05, 'batch_size': 128, 'dropout_rate': 0.25728600178643135, 'weight_decay': 1.6695071352852827e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 80 finished with value: 0.38494622707366943 and parameters: {'learning_rate': 4.9611545838376664e-05, 'batch_size': 128, 'dropout_rate': 0.25728600178643135, 'weight_decay': 1.6695071352852827e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:26:21 - ========================================================================================================================================================================================================
+2024-12-17 03:26:21 - Trial 81:
+2024-12-17 03:26:21 - Train Accuracy: 0.913750, Train Precision: 0.983001, Train Recall: 0.904043, Train F1 Score: 0.941870
+2024-12-17 03:26:21 - Validation Accuracy: 0.703827, Validation Precision: 0.799582, Validation Recall: 0.823656, Validation F1 Score: 0.811441
+Trial 81 finished with value: 0.823655903339386 and parameters: {'learning_rate': 0.0002642797781222639, 'batch_size': 32, 'dropout_rate': 0.23506522325353274, 'weight_decay': 1.1698492466263197e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 81 finished with value: 0.823655903339386 and parameters: {'learning_rate': 0.0002642797781222639, 'batch_size': 32, 'dropout_rate': 0.23506522325353274, 'weight_decay': 1.1698492466263197e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:27:41 - ========================================================================================================================================================================================================
+2024-12-17 03:27:41 - Trial 82:
+2024-12-17 03:27:41 - Train Accuracy: 0.941250, Train Precision: 0.985277, Train Recall: 0.938005, Train F1 Score: 0.961060
+2024-12-17 03:27:41 - Validation Accuracy: 0.732113, Validation Precision: 0.829004, Validation Recall: 0.823656, Validation F1 Score: 0.826321
+Trial 82 finished with value: 0.823655903339386 and parameters: {'learning_rate': 0.0003707964154407435, 'batch_size': 32, 'dropout_rate': 0.2302451815167644, 'weight_decay': 2.0830620089136887e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 82 finished with value: 0.823655903339386 and parameters: {'learning_rate': 0.0003707964154407435, 'batch_size': 32, 'dropout_rate': 0.2302451815167644, 'weight_decay': 2.0830620089136887e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:29:00 - ========================================================================================================================================================================================================
+2024-12-17 03:29:00 - Trial 83:
+2024-12-17 03:29:00 - Train Accuracy: 0.940833, Train Precision: 0.986924, Train Recall: 0.935849, Train F1 Score: 0.960708
+2024-12-17 03:29:00 - Validation Accuracy: 0.732113, Validation Precision: 0.839286, Validation Recall: 0.808602, Validation F1 Score: 0.823658
+Trial 83 finished with value: 0.8086021542549133 and parameters: {'learning_rate': 0.00028046889804520203, 'batch_size': 32, 'dropout_rate': 0.21879653243701463, 'weight_decay': 5.231631108993324e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 83 finished with value: 0.8086021542549133 and parameters: {'learning_rate': 0.00028046889804520203, 'batch_size': 32, 'dropout_rate': 0.21879653243701463, 'weight_decay': 5.231631108993324e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:30:19 - ========================================================================================================================================================================================================
+2024-12-17 03:30:19 - Trial 84:
+2024-12-17 03:30:19 - Train Accuracy: 0.898750, Train Precision: 0.974676, Train Recall: 0.892183, Train F1 Score: 0.931607
+2024-12-17 03:30:19 - Validation Accuracy: 0.655574, Validation Precision: 0.811594, Validation Recall: 0.722581, Validation F1 Score: 0.764505
+Trial 84 finished with value: 0.7225806713104248 and parameters: {'learning_rate': 0.00024008395380290963, 'batch_size': 32, 'dropout_rate': 0.24702576694302153, 'weight_decay': 0.0006195735687627578}. Best is trial 62 with value: 0.9827957153320312.
+Trial 84 finished with value: 0.7225806713104248 and parameters: {'learning_rate': 0.00024008395380290963, 'batch_size': 32, 'dropout_rate': 0.24702576694302153, 'weight_decay': 0.0006195735687627578}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:31:38 - ========================================================================================================================================================================================================
+2024-12-17 03:31:38 - Trial 85:
+2024-12-17 03:31:38 - Train Accuracy: 0.782083, Train Precision: 0.976395, Train Recall: 0.735849, Train F1 Score: 0.839225
+2024-12-17 03:31:38 - Validation Accuracy: 0.377704, Validation Precision: 0.842105, Validation Recall: 0.240860, Validation F1 Score: 0.374582
+Trial 85 finished with value: 0.2408602088689804 and parameters: {'learning_rate': 1.6118515952185158e-05, 'batch_size': 32, 'dropout_rate': 0.2270024821048245, 'weight_decay': 0.0008344921206868066}. Best is trial 62 with value: 0.9827957153320312.
+Trial 85 finished with value: 0.2408602088689804 and parameters: {'learning_rate': 1.6118515952185158e-05, 'batch_size': 32, 'dropout_rate': 0.2270024821048245, 'weight_decay': 0.0008344921206868066}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:32:57 - ========================================================================================================================================================================================================
+2024-12-17 03:32:57 - Trial 86:
+2024-12-17 03:32:57 - Train Accuracy: 0.948750, Train Precision: 0.987064, Train Recall: 0.946092, Train F1 Score: 0.966144
+2024-12-17 03:32:57 - Validation Accuracy: 0.742096, Validation Precision: 0.828390, Validation Recall: 0.840860, Validation F1 Score: 0.834578
+Trial 86 finished with value: 0.8408601880073547 and parameters: {'learning_rate': 0.0004796672761335912, 'batch_size': 32, 'dropout_rate': 0.20560764166657056, 'weight_decay': 3.017581585423098e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 86 finished with value: 0.8408601880073547 and parameters: {'learning_rate': 0.0004796672761335912, 'batch_size': 32, 'dropout_rate': 0.20560764166657056, 'weight_decay': 3.017581585423098e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:34:01 - ========================================================================================================================================================================================================
+2024-12-17 03:34:01 - Trial 87:
+2024-12-17 03:34:01 - Train Accuracy: 0.842083, Train Precision: 0.964151, Train Recall: 0.826415, Train F1 Score: 0.889986
+2024-12-17 03:34:01 - Validation Accuracy: 0.773710, Validation Precision: 0.790123, Validation Recall: 0.963441, Validation F1 Score: 0.868217
+Trial 87 finished with value: 0.9634408354759216 and parameters: {'learning_rate': 0.00032463822150365307, 'batch_size': 64, 'dropout_rate': 0.3499712595873627, 'weight_decay': 1.0321005779393525e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 87 finished with value: 0.9634408354759216 and parameters: {'learning_rate': 0.00032463822150365307, 'batch_size': 64, 'dropout_rate': 0.3499712595873627, 'weight_decay': 1.0321005779393525e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:35:04 - ========================================================================================================================================================================================================
+2024-12-17 03:35:04 - Trial 88:
+2024-12-17 03:35:04 - Train Accuracy: 0.793333, Train Precision: 0.943249, Train Recall: 0.779515, Train F1 Score: 0.853601
+2024-12-17 03:35:04 - Validation Accuracy: 0.567388, Validation Precision: 0.845118, Validation Recall: 0.539785, Validation F1 Score: 0.658793
+Trial 88 finished with value: 0.5397849678993225 and parameters: {'learning_rate': 0.00016863867326475133, 'batch_size': 64, 'dropout_rate': 0.3365401967891337, 'weight_decay': 1.2330165091225513e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 88 finished with value: 0.5397849678993225 and parameters: {'learning_rate': 0.00016863867326475133, 'batch_size': 64, 'dropout_rate': 0.3365401967891337, 'weight_decay': 1.2330165091225513e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:36:08 - ========================================================================================================================================================================================================
+2024-12-17 03:36:08 - Trial 89:
+2024-12-17 03:36:08 - Train Accuracy: 0.836250, Train Precision: 0.966199, Train Recall: 0.816712, Train F1 Score: 0.885188
+2024-12-17 03:36:08 - Validation Accuracy: 0.745424, Validation Precision: 0.802326, Validation Recall: 0.890323, Validation F1 Score: 0.844037
+Trial 89 finished with value: 0.8903225660324097 and parameters: {'learning_rate': 0.00011778367102109586, 'batch_size': 64, 'dropout_rate': 0.30502206880402016, 'weight_decay': 1.144309403388558e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 89 finished with value: 0.8903225660324097 and parameters: {'learning_rate': 0.00011778367102109586, 'batch_size': 64, 'dropout_rate': 0.30502206880402016, 'weight_decay': 1.144309403388558e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:37:11 - ========================================================================================================================================================================================================
+2024-12-17 03:37:11 - Trial 90:
+2024-12-17 03:37:11 - Train Accuracy: 0.860417, Train Precision: 0.972050, Train Recall: 0.843666, Train F1 Score: 0.903319
+2024-12-17 03:37:11 - Validation Accuracy: 0.762063, Validation Precision: 0.823293, Validation Recall: 0.881720, Validation F1 Score: 0.851506
+Trial 90 finished with value: 0.8817204236984253 and parameters: {'learning_rate': 0.00014676102502626575, 'batch_size': 64, 'dropout_rate': 0.3131871829527468, 'weight_decay': 1.734680572932661e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 90 finished with value: 0.8817204236984253 and parameters: {'learning_rate': 0.00014676102502626575, 'batch_size': 64, 'dropout_rate': 0.3131871829527468, 'weight_decay': 1.734680572932661e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:38:15 - ========================================================================================================================================================================================================
+2024-12-17 03:38:15 - Trial 91:
+2024-12-17 03:38:15 - Train Accuracy: 0.856667, Train Precision: 0.978467, Train Recall: 0.832884, Train F1 Score: 0.899825
+2024-12-17 03:38:15 - Validation Accuracy: 0.743760, Validation Precision: 0.809145, Validation Recall: 0.875269, Validation F1 Score: 0.840909
+Trial 91 finished with value: 0.875268816947937 and parameters: {'learning_rate': 8.516708924812932e-05, 'batch_size': 64, 'dropout_rate': 0.2889839132704723, 'weight_decay': 0.00012638043627527295}. Best is trial 62 with value: 0.9827957153320312.
+Trial 91 finished with value: 0.875268816947937 and parameters: {'learning_rate': 8.516708924812932e-05, 'batch_size': 64, 'dropout_rate': 0.2889839132704723, 'weight_decay': 0.00012638043627527295}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:39:19 - ========================================================================================================================================================================================================
+2024-12-17 03:39:19 - Trial 92:
+2024-12-17 03:39:19 - Train Accuracy: 0.949167, Train Precision: 0.987620, Train Recall: 0.946092, Train F1 Score: 0.966410
+2024-12-17 03:39:19 - Validation Accuracy: 0.745424, Validation Precision: 0.834764, Validation Recall: 0.836559, Validation F1 Score: 0.835661
+Trial 92 finished with value: 0.8365591168403625 and parameters: {'learning_rate': 0.000312411495032588, 'batch_size': 64, 'dropout_rate': 0.23209675287662374, 'weight_decay': 1.0530332364002149e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 92 finished with value: 0.8365591168403625 and parameters: {'learning_rate': 0.000312411495032588, 'batch_size': 64, 'dropout_rate': 0.23209675287662374, 'weight_decay': 1.0530332364002149e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:40:38 - ========================================================================================================================================================================================================
+2024-12-17 03:40:38 - Trial 93:
+2024-12-17 03:40:38 - Train Accuracy: 0.958750, Train Precision: 0.990503, Train Recall: 0.955795, Train F1 Score: 0.972840
+2024-12-17 03:40:38 - Validation Accuracy: 0.750416, Validation Precision: 0.822086, Validation Recall: 0.864516, Validation F1 Score: 0.842767
+Trial 93 finished with value: 0.8645161390304565 and parameters: {'learning_rate': 0.0002258972441923306, 'batch_size': 32, 'dropout_rate': 0.222983061959445, 'weight_decay': 1.4179017741877555e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 93 finished with value: 0.8645161390304565 and parameters: {'learning_rate': 0.0002258972441923306, 'batch_size': 32, 'dropout_rate': 0.222983061959445, 'weight_decay': 1.4179017741877555e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:41:57 - ========================================================================================================================================================================================================
+2024-12-17 03:41:57 - Trial 94:
+2024-12-17 03:41:57 - Train Accuracy: 0.922500, Train Precision: 0.978772, Train Recall: 0.919677, Train F1 Score: 0.948305
+2024-12-17 03:41:57 - Validation Accuracy: 0.690516, Validation Precision: 0.812081, Validation Recall: 0.780645, Validation F1 Score: 0.796053
+Trial 94 finished with value: 0.7806451320648193 and parameters: {'learning_rate': 0.000329559452234521, 'batch_size': 32, 'dropout_rate': 0.23922525327004898, 'weight_decay': 4.509083121772149e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 94 finished with value: 0.7806451320648193 and parameters: {'learning_rate': 0.000329559452234521, 'batch_size': 32, 'dropout_rate': 0.23922525327004898, 'weight_decay': 4.509083121772149e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:43:16 - ========================================================================================================================================================================================================
+2024-12-17 03:43:16 - Trial 95:
+2024-12-17 03:43:16 - Train Accuracy: 0.916250, Train Precision: 0.980814, Train Recall: 0.909434, Train F1 Score: 0.943776
+2024-12-17 03:43:16 - Validation Accuracy: 0.713810, Validation Precision: 0.839907, Validation Recall: 0.778495, Validation F1 Score: 0.808036
+Trial 95 finished with value: 0.7784945964813232 and parameters: {'learning_rate': 0.00040985478628842193, 'batch_size': 32, 'dropout_rate': 0.26522592756123137, 'weight_decay': 8.411057822489022e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 95 finished with value: 0.7784945964813232 and parameters: {'learning_rate': 0.00040985478628842193, 'batch_size': 32, 'dropout_rate': 0.26522592756123137, 'weight_decay': 8.411057822489022e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:44:35 - ========================================================================================================================================================================================================
+2024-12-17 03:44:35 - Trial 96:
+2024-12-17 03:44:35 - Train Accuracy: 0.957500, Train Precision: 0.987757, Train Recall: 0.956873, Train F1 Score: 0.972070
+2024-12-17 03:44:35 - Validation Accuracy: 0.703827, Validation Precision: 0.821029, Validation Recall: 0.789247, Validation F1 Score: 0.804825
+Trial 96 finished with value: 0.7892473340034485 and parameters: {'learning_rate': 0.0003716954884222708, 'batch_size': 32, 'dropout_rate': 0.1644471600782519, 'weight_decay': 0.0006542507053901384}. Best is trial 62 with value: 0.9827957153320312.
+Trial 96 finished with value: 0.7892473340034485 and parameters: {'learning_rate': 0.0003716954884222708, 'batch_size': 32, 'dropout_rate': 0.1644471600782519, 'weight_decay': 0.0006542507053901384}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:45:55 - ========================================================================================================================================================================================================
+2024-12-17 03:45:55 - Trial 97:
+2024-12-17 03:45:55 - Train Accuracy: 0.960417, Train Precision: 0.993274, Train Recall: 0.955256, Train F1 Score: 0.973894
+2024-12-17 03:45:55 - Validation Accuracy: 0.712146, Validation Precision: 0.780769, Validation Recall: 0.873118, Validation F1 Score: 0.824365
+Trial 97 finished with value: 0.8731182813644409 and parameters: {'learning_rate': 0.0002071596112898289, 'batch_size': 32, 'dropout_rate': 0.21498038042732406, 'weight_decay': 2.2461309700787263e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 97 finished with value: 0.8731182813644409 and parameters: {'learning_rate': 0.0002071596112898289, 'batch_size': 32, 'dropout_rate': 0.21498038042732406, 'weight_decay': 2.2461309700787263e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:46:58 - ========================================================================================================================================================================================================
+2024-12-17 03:46:58 - Trial 98:
+2024-12-17 03:46:58 - Train Accuracy: 0.963750, Train Precision: 0.993304, Train Recall: 0.959569, Train F1 Score: 0.976145
+2024-12-17 03:46:58 - Validation Accuracy: 0.742096, Validation Precision: 0.811245, Validation Recall: 0.868817, Validation F1 Score: 0.839045
+Trial 98 finished with value: 0.8688172101974487 and parameters: {'learning_rate': 0.00046497902730447847, 'batch_size': 64, 'dropout_rate': 0.2433936934511097, 'weight_decay': 5.034904695023156e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 98 finished with value: 0.8688172101974487 and parameters: {'learning_rate': 0.00046497902730447847, 'batch_size': 64, 'dropout_rate': 0.2433936934511097, 'weight_decay': 5.034904695023156e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:48:17 - ========================================================================================================================================================================================================
+2024-12-17 03:48:17 - Trial 99:
+2024-12-17 03:48:17 - Train Accuracy: 0.787500, Train Precision: 0.943894, Train Recall: 0.770889, Train F1 Score: 0.848665
+2024-12-17 03:48:17 - Validation Accuracy: 0.675541, Validation Precision: 0.835821, Validation Recall: 0.722581, Validation F1 Score: 0.775087
+Trial 99 finished with value: 0.7225806713104248 and parameters: {'learning_rate': 0.0002755309525509669, 'batch_size': 32, 'dropout_rate': 0.3484582028777139, 'weight_decay': 4.027400030858201e-05}. Best is trial 62 with value: 0.9827957153320312.
+Trial 99 finished with value: 0.7225806713104248 and parameters: {'learning_rate': 0.0002755309525509669, 'batch_size': 32, 'dropout_rate': 0.3484582028777139, 'weight_decay': 4.027400030858201e-05}. Best is trial 62 with value: 0.9827957153320312.
+2024-12-17 03:48:17 - Best hyperparameters:
+2024-12-17 03:48:17 - {'learning_rate': 0.00036629023640623776, 'batch_size': 32, 'dropout_rate': 0.19566486542199024, 'weight_decay': 0.0001236434480604789}
+2024-12-17 03:48:17 - Best Recall on validation set: 0.982796
