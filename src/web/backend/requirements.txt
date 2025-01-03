@@ -1,0 +1,7 @@
+flask
+onnx
+onnxruntime
+opencv-python
+numpy
+torch==2.5.1
+
