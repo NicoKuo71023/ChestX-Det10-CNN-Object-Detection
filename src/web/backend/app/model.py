@@ -1,8 +1,8 @@
-import onnx
+
 import onnxruntime as ort
 import cv2
 import numpy as np
-import torch
+
 
 def image_preprocess(image_path):
     img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
@@ -29,7 +29,7 @@ def predict(image_path):
                   'Mass', 'Nodule', 'Pneumothorax']
     # Input shape: (batch_size, channel, w, h)
     # 加載 ONNX 模型
-    session = ort.InferenceSession("data/model/CNN_classification_model.onnx")
+    session = ort.InferenceSession("app/static/models/CNN_classification_model.onnx")
 
     # 獲取模型的輸入名稱
     input_name = session.get_inputs()[0].name

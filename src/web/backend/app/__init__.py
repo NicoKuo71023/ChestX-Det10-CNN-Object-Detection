@@ -1,2 +1,19 @@
-from . import model_trainer
-from . import model_predict
+from flask import Flask
+import os
+
+def create_app():
+    # 建立 Flask 應用
+    appp = Flask(__name__)
+
+    # 設定檔案儲存路徑
+    UPLOAD_FOLDER = 'app/static/uploads/'
+    appp.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
+    # 確保儲存資料夾存在
+    os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+
+    # 使用 app_context 避免循環匯入
+    with appp.app_context():
+        import app.routes
+
+    return appp
