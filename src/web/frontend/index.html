@@ -4,23 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
     <script src="https://unpkg.com/vue@3.3.4/dist/vue.global.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div id="app">
         <div class="container">
-          <div 
-            class="drop-zone" 
-            @dragover.prevent
-            @dragenter.prevent
-            @drop="handleDrop"
-          ></div>
-          
+            <div class="row">
+                <div class="col-md-4"><div 
+                    class="drop-zone" 
+                    @dragover.prevent
+                    @dragenter.prevent
+                    @drop="handleDrop"
+                    >Drop file here to upload and predict</div>
+                </div>
+                <div class="col-md-4 show-zone" v-if="previewImage">
+                    <img :src="previewImage" alt="預覽圖片" class="img-show">
+                </div>
+                <div class="col-md-4 info-zone">
+                    <table v-show="isTableVisible" class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col">Diseases</th>
+                            <th scope="col">Amount</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr v-for="item in prediction_render" :key="item.disease">
+                            <td>{{item.disease}}</td>
+                            <td>{{item.amount}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                        
+                </div>
+            </div>
+            
         </div>
-        <div class="show-zone" v-for="(file, index) in previewImages" :key="index">
-            <img :src="file" alt="預覽圖片" class="img-show"></div>
+        
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>

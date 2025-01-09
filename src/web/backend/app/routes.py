@@ -1,28 +1,32 @@
 from flask import request, jsonify, current_app
-
+import numpy as np
 from app.model import predict
-import os
 
+
+    
 @current_app.route('/predict', methods=['POST'])
 def predict_route():
-    # 確保有檔案傳入
-    if 'file' not in request.files:
-        return jsonify({"error": "No file part"}), 400
-
-    # 取得檔案
     file = request.files['file']
-
     # 檢查檔案是否為空
     if file.filename == '':
         return jsonify({"error": "No selected file"}), 400
+    try:
+        # 圖片預處理
+        # 模型預測
+        prediction = predict(file)
+        
+        if isinstance(prediction, dict):
+            prediction = {key: int(value) for key, value in prediction.items()}
+        
+        # print(type(prediction["Effusion"]))
+        # 回傳預測結果
+        return jsonify({"prediction": prediction}), 200
+        # return jsonify({'message': 'CORS is working!'})
 
-    # 儲存檔案到本地（測試用）
-    file_path = os.path.join(current_app.config['UPLOAD_FOLDER'], file.filename)
-    file.save(file_path)
-    print(f"檔案已接收並儲存於: {file_path}")
-    prediction = predict(file_path)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
     
-    print(prediction)
-    return jsonify({"prediction": prediction})
-
-
+@current_app.route('/test', methods=['GET'])
+def test():
+    print('test pass!!')
+    return jsonify({"123": "Test"}), 200

@@ -1,10 +1,11 @@
 from flask import Flask
 import os
+from flask_cors import CORS
 
 def create_app():
     # 建立 Flask 應用
     appp = Flask(__name__)
-
+    CORS(appp)
     # 設定檔案儲存路徑
     UPLOAD_FOLDER = 'app/static/uploads/'
     appp.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER

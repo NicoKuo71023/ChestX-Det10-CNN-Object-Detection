@@ -4,13 +4,16 @@ import cv2
 import numpy as np
 
 
-def image_preprocess(image_path):
-    img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
+def image_preprocess(image_file):
+    # 將 Flask 接收的檔案轉換為 NumPy 陣列
+    file_bytes = np.frombuffer(image_file.read(), np.uint8)
 
-    # Check if the image was loaded successfully
+    # 使用 OpenCV 解碼圖片並轉換為灰階
+    img = cv2.imdecode(file_bytes, cv2.IMREAD_GRAYSCALE)
+
+    # 確認圖片是否讀取成功
     if img is None:
-        raise ValueError("Image not found at specified path!")
-
+        raise ValueError("無法解析圖片，請檢查格式!")
     # Resize the image
     img_resized = cv2.resize(img, (128, 128))
 
@@ -23,8 +26,8 @@ def image_preprocess(image_path):
     input_data = np.expand_dims(input_data, axis=0)
     return input_data
 
-def predict(image_path):
-    input_data = image_preprocess(image_path)
+def predict(image_file):
+    input_data = image_preprocess(image_file)
     columns_name = ['Atelectasis', 'Calcification', 'Consolidation', 'Effusion', 'Emphysema', 'Fibrosis', 'Fracture', 
                   'Mass', 'Nodule', 'Pneumothorax']
     # Input shape: (batch_size, channel, w, h)
